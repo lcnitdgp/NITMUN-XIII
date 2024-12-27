@@ -67,7 +67,7 @@ const Events = ({ user }) => {
         </h1>
         <div className={cx(styles['header-btn-wrapper'])}>
           <NavLink to='/gallery' className={cx('btn', styles['intro-header-btn'])}>
-            <span className={cx('btn-subtitle', styles['intro-btn-subtitle'])}>Atulyam'23 in reels</span>
+            <span className={cx('btn-subtitle', styles['intro-btn-subtitle'])}>NITMUN' XIII in reels</span>
             <span className={cx('btn-text', styles['intro-btn-text'])}>Gallery</span>
             <LinkIcon />
           </NavLink>

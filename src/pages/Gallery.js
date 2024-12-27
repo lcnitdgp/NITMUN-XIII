@@ -58,7 +58,7 @@ const Gallery = ({ user }) => {
         </h1>
         <div className={cx('subtitle', styles['header-subtitle'])}>
           <h2>May.4-6</h2>
-          <div>Atulyam'23 in reels</div>
+          <div>NITMUN' XIII in reels</div>
         </div>
       </header>
       <main className={cx(styles['main-content'])}>
