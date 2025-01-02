@@ -6,7 +6,7 @@
 
     .page-header {
         @media screen and (max-width: 699px) {
-            height: 100vh;
+            height: 80vh;
         }
     }
 
@@ -60,7 +60,7 @@
     .schedule-nav {
         font-family: 'Open Sans', sans-serif;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         width: 100%;
         gap: .625rem;
         margin-bottom: 2.5rem;

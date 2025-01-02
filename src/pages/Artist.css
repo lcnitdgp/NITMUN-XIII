@@ -1,0 +1,199 @@
+.artist-section {
+    min-height: 45%;
+    background-color: #232020;
+    display: flex; /* Makes this a flex container */
+    flex-direction: row; /* Places the children side by side */
+    justify-content: space-around; /* Adds space around the children */
+    align-items: center; /* Vertically centers the children */
+    overflow: hidden;
+    border: 6px solid #302b2b;
+    word-break: keep-all;
+    overflow-wrap: normal;
+    -ms-word-break: keep-all;
+  }
+  
+  .about {
+    word-break: keep-all;
+    overflow-wrap: normal;
+    -ms-word-break: keep-all;
+  }
+  
+  .section-heading {
+    font-size: 3rem;
+    word-break: keep-all;
+    overflow-wrap: normal;
+    -ms-word-break: keep-all;
+  }
+  
+  .section-subheading {
+    font-size: 2.2rem;
+    margin-top: 40px; /* Reduced from 40px */
+  }
+  
+  .artist-content {
+    color: white;
+    word-break: break-word;
+    position: relative;
+    width: 50%;
+    min-height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    padding: 5% 3% 5% 2%;
+  }
+  
+  .artist {
+    color: palegreen;
+    line-height: 26px;
+    font-size: 1.1rem;
+  }
+  
+  canvas {
+    display: none;
+    width: 100% !important;
+  }
+  
+  .artist-image {
+    position: relative;
+    width: 50%;
+    min-height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    padding: 5% 3% 5% 2%;
+    overflow: hidden;
+  }
+  
+  .artist-image > img {
+    width: 60%;
+    height: auto;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Add this line */
+  }
+  
+  .artist-image:hover > img {
+    transform: scale(1.1); /* Scale up the image */
+    opacity: 0.8; /* Change the opacity */
+  }
+  
+  .artist-image::before {
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+  }
+  
+  .artist-image:hover::before {
+    -webkit-animation: shine .75s;
+    animation: shine .75s;
+  }
+  
+  @-webkit-keyframes shine {
+    100% {
+      left: 125%;
+    }
+  }
+  
+  @keyframes shine {
+    100% {
+      left: 125%;
+    }
+  }
+  
+  .commitee-btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+  
+  }
+  
+  .commitee-btn {
+    /* Add your styles here */
+    background-color: #f8f9fa;
+    border: none;
+    color: #212529;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-weight: 600;
+  }
+  
+  .commitee-btn:hover {
+    background-color: #d2b785;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+  }
+  
+  .commitee-btn {
+    padding: 3% 5%;
+    border-radius: 5px;
+    color: #201d1d; /* Change text color to white */
+    background-color: #eed7bf; /* Change background color to blue */
+    text-decoration: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 80%;
+    height: 100%;
+    margin: 3%;
+  }
+  
+  .guide-button, .matrix-button {
+    color: #000;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+   }
+   
+  
+  
+  @media (max-width: 768px) {
+    .artist-section {
+      flex-direction: column; /* Stack the children vertically on small screens */
+    }
+    .artist-content {
+      width: 100%; /* Make the text full width on small screens */
+      order: 2;
+    }
+    .artist-image {
+      width: 100%; /* Make the image full width on small screens */
+      order: 1;
+    }
+    .artist-image > img {
+      width: 85%; /* Increase the width of the images on small screens */
+    }
+  
+    .commitee-btn-container {
+      flex-direction: column;
+      height: auto; /* Add this line */
+    }
+  
+    .guide-button, .matrix-button, .commitee-btn {
+      color: #000;
+      width: 100%; /* Add this line */
+      height: 100%;
+    }
+  
+    .commitee-btn {
+      width: 70%;
+      height: 70%;
+    }
+  }

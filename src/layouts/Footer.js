@@ -1,104 +1,172 @@
 import styles from '../styles/Footer.module.scss';
-import logo from '../media/logo/atulyamLogo.png'
-import echoOfArunachal from '../media/logo/echo_arunachal.png'
-import hotelObsidianBlue from '../media/logo/hotel-obsidian-blue.png'
-import bye from '../media/bye.png';
-import cx from 'classnames'
-import { ReactComponent as MailIcon } from '../media/icons/mail.svg';
-import { ReactComponent as WAIcon } from '../media/icons/wa.svg';
-import { useState } from 'react';
 
-const Footer = () => {
-  const [devTeam, setDevTeam] = useState(false);
+function Footer() {
+    return (
+        <>
+            <section className="contact-area" id="contact">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-6 offset-lg-3">
+                            <div className={styles['contact-content']}>
+                                <a href="#">
+                                    <img className="footer-image" src="./assets/lclogo.png" alt="logo" />
+                                </a>
 
-  return (
-    <footer className='container'>
-      <div className={styles.MainFooterContent}>
-        <div className={cx(styles.footerItems)} id="footerContent">
-          <div className={styles.QuotesContainer}>
-            <div className={styles.quotes}>Our cultural fest is a mosaic of traditions, where stories unfold, and memories are made</div>
-          </div>
+                                <div className="hr"></div>
+                                <h6> NATIONAL INSTITUTE OF TECHNOLOGY, DURGAPUR. 713209, WEST BENGAL</h6>
+                                <h6>+91 9054093102 -Epshita <span>|</span> lc.nitdgp@gmail.com </h6>
+                                <h6>NITMUN XII &copy; 2024</h6>
 
-          <div>
-            <div className={styles.LogoContainer}>
-              <img src={logo} alt=""></img>
-              <div className={styles.title}>NITMUN XIII</div>
-            </div>
-          </div>
-          <div className={styles['sponsor-wrapper']}>
-            <div className={styles.sponsor}>
-              <p style={{ textAlign: "center", fontSize: '1.2rem' }}>Our Sponsors</p>
-              <div className={styles.sponsorImgs}>
-                <img className={styles.sponsors} src={echoOfArunachal} alt=""></img>
-                <img className={styles.sponsors} src={hotelObsidianBlue} alt=""></img>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={styles.footerItems}>
-          <div >
-            <p>Contact us</p>
-            <ul className={styles.SocialHandles}>
-              <li className={cx(styles['handle-wrapper'])}>
-                <a className={styles.handle} target='_blank' rel='noreferrer' href="https://www.facebook.com/atulyamnitap">
-                  <svg role="presentation" aria-label="Facebook" aria-hidden="true">
-                    <use href="/media/icons/sprite.svg#social-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li className={cx(styles['handle-wrapper'])}>
-                <a className={styles.handle} target='_blank' rel='noreferrer' href="https://www.instagram.com/nitap_atulyam/">
-                  <svg role="presentation" aria-label="Twitter" aria-hidden="true">
-                    <use href="/media/icons/sprite.svg#social-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li className={cx(styles['handle-wrapper'])}>
-                <a className={styles.handle} target='_blank' rel='noreferrer' href="mailto:atulyam@nitap.ac.in">
-                  <MailIcon />
-                </a>
-              </li>
-              <li className={cx(styles['handle-wrapper'])}>
-                <a className={styles.handle} target='_blank' rel='noreferrer' href="https://chat.whatsapp.com/HmcowbF1mbG7DRJxti4X4X">
-                  <WAIcon />
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className={styles.thanks}>
-            <span>Thank you</span>
-            <br />
-            <span>for your support</span>
-          </div>
-          <div>
-            <img src={bye} style={{ height: "160px", width: "auto" }} alt=""></img>
-          </div>
-        </div>
-      </div>
-      <div className={styles.copyright}>
-        <div className={styles.team}>
-          <span>
-            Handcrafted with 🖤 by
-            <button className={cx(styles.devteamBtn, {
-              [styles.on]: devTeam
-            })} onClick={(e) => { e.preventDefault(); setDevTeam(!devTeam) }}>
-              Team4One
-            </button>
-          </span>
-          <span className={styles.sep}>~</span>
-          <span>&copy; 2025 NITMUN XIII NIT Durgapur</span>
-          {devTeam && (
-            <ul className={styles.devteam}>
-              <li><a className={cx('link', styles.ln)} target='_blank' rel='noreferrer' href="https://github.com/tripathics">@tripathics</a></li>
-              <li><a className={cx('link', styles.ln)} target='_blank' rel='noreferrer' href="https://github.com/pursottam6003">@pursottam6003</a></li>
-              <li><a className={cx('link', styles.ln)} target='_blank' rel='noreferrer' href="https://github.com/daknya">@daknya</a></li>
-            </ul>
-          )}
-        </div>
-      </div>
-    </footer>
-  )
+                                <div 
+                                    className="contact-social" 
+                                    style={{
+                                        display: 'flex',
+                                        justifyContent: 'center',
+                                        marginTop: '30px',
+                                    }}
+                                >
+                                    <ul style={{ display: 'flex', gap: '15px', padding: 0, listStyle: 'none' }}>
+                                        <li>
+                                            <a 
+                                                href="https://www.facebook.com/lcnitdgp/" 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                                style={{
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    justifyContent: 'center',
+                                                    width: '50px',
+                                                    height: '50px',
+                                                    border: '2px solid #8b9199',
+                                                    color: '#8b9199',
+                                                    borderRadius: '8px',
+                                                    transition: 'all 0.4s ease',
+                                                    backgroundColor: 'transparent',
+                                                }}
+                                                onMouseEnter={(e) => {
+                                                    e.target.style.borderColor = '#FAB702';
+                                                    e.target.style.color = '#232020';
+                                                    e.target.style.backgroundColor = '#FAB702';
+                                                    e.target.style.boxShadow = '0 4px 8px rgba(250, 183, 2, 0.4)';
+                                                }}
+                                                onMouseLeave={(e) => {
+                                                    e.target.style.borderColor = '#8b9199';
+                                                    e.target.style.color = '#8b9199';
+                                                    e.target.style.backgroundColor = 'transparent';
+                                                    e.target.style.boxShadow = 'none';
+                                                }}
+                                            >
+                                                <i className="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a 
+                                                href="https://www.instagram.com/lcnitd/"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                style={{
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    justifyContent: 'center',
+                                                    width: '50px',
+                                                    height: '50px',
+                                                    border: '2px solid #8b9199',
+                                                    color: '#8b9199',
+                                                    borderRadius: '8px',
+                                                    transition: 'all 0.4s ease',
+                                                    backgroundColor: 'transparent',
+                                                }}
+                                                onMouseEnter={(e) => {
+                                                    e.target.style.borderColor = '#FAB702';
+                                                    e.target.style.color = '#232020';
+                                                    e.target.style.backgroundColor = '#FAB702';
+                                                    e.target.style.boxShadow = '0 4px 8px rgba(250, 183, 2, 0.4)';
+                                                }}
+                                                onMouseLeave={(e) => {
+                                                    e.target.style.borderColor = '#8b9199';
+                                                    e.target.style.color = '#8b9199';
+                                                    e.target.style.backgroundColor = 'transparent';
+                                                    e.target.style.boxShadow = 'none';
+                                                }}
+                                            >
+                                                <i className="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a 
+                                                href="https://www.youtube.com/channel/UCnnXqep517pke6rywOC61Cg"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                style={{
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    justifyContent: 'center',
+                                                    width: '50px',
+                                                    height: '50px',
+                                                    border: '2px solid #8b9199',
+                                                    color: '#8b9199',
+                                                    borderRadius: '8px',
+                                                    transition: 'all 0.4s ease',
+                                                    backgroundColor: 'transparent',
+                                                }}
+                                                onMouseEnter={(e) => {
+                                                    e.target.style.borderColor = '#FAB702';
+                                                    e.target.style.color = '#232020';
+                                                    e.target.style.backgroundColor = '#FAB702';
+                                                    e.target.style.boxShadow = '0 4px 8px rgba(250, 183, 2, 0.4)';
+                                                }}
+                                                onMouseLeave={(e) => {
+                                                    e.target.style.borderColor = '#8b9199';
+                                                    e.target.style.color = '#8b9199';
+                                                    e.target.style.backgroundColor = 'transparent';
+                                                    e.target.style.boxShadow = 'none';
+                                                }}
+                                            >
+                                                <i className="fab fa-youtube"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a 
+                                                href="https://lcnitd.co.in/"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                style={{
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    justifyContent: 'center',
+                                                    width: '50px',
+                                                    height: '50px',
+                                                    border: '2px solid #8b9199',
+                                                    color: '#8b9199',
+                                                    borderRadius: '8px',
+                                                    transition: 'all 0.4s ease',
+                                                    backgroundColor: 'transparent',
+                                                }}
+                                                onMouseEnter={(e) => {
+                                                    e.target.style.borderColor = '#FAB702';
+                                                    e.target.style.color = '#232020';
+                                                    e.target.style.backgroundColor = '#FAB702';
+                                                    e.target.style.boxShadow = '0 4px 8px rgba(250, 183, 2, 0.4)';
+                                                }}
+                                                onMouseLeave={(e) => {
+                                                    e.target.style.borderColor = '#8b9199';
+                                                    e.target.style.color = '#8b9199';
+                                                    e.target.style.backgroundColor = 'transparent';
+                                                    e.target.style.boxShadow = 'none';
+                                                }}
+                                            >
+                                                <i className="fa fa-globe"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </>
+    );
 }
 
-export default Footer
+export default Footer;

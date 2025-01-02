@@ -11,9 +11,9 @@ import Hero from '../components/Hero';
 import { motion } from 'framer-motion'
 
 const tags = [
-  'cosplay', 'fun', 'poetry', 'face painting', 'solo song', 'dance', 'essay', 'sketching',
-  'concert', 'flash mob', 'film making', 'joy', 'concert', 'dj', 'poetry slam'
-]
+  'delegate', 'resolution','diplomacy','caucus', 'committee',
+  'assembly', 'security council','foreign policy', 
+];
 
 const Home = ({ user }) => {
   return (

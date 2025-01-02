@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import CountdownTimer from "./CountdownTimer";
 import { eventStartDate } from "../data/data";
 import { ReactComponent as ScrollDownIcon } from '../media/icons/down.svg';
-import HeroVideo from '../media/medium.mp4';
+import HeroVideo from '../media/logoreveal.mp4';
 import HeroImage from '../media/hero-image.png';
 import styles from './Hero.module.scss';
 
@@ -75,8 +75,7 @@ const Hero = () => {
         </h1>
         
         <div className={styles.timeline}>
-          {!isLive && (<>
-            <p>The countdown begins!</p>
+          { (<>
             <CountdownTimer countdownDate={eventStartDate} handleTimerComplete={setIsLive} />
           </>)}
         </div>

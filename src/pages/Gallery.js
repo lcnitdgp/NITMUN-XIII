@@ -71,9 +71,8 @@ const Gallery = ({ user }) => {
             <p>4<sup>th</sup> May</p>
           </div>
           <div className='Video'>
-            <Video embedId={"lG3S6VUt7AE"} />
+            <Video embedId={"9EhrOk2mWXI"} />
           </div>
-
 
 
         </div>
@@ -87,23 +86,11 @@ const Gallery = ({ user }) => {
           </div>
           <div className='Video'>
 
-            <Video embedId={'xwGDkyz_LgI'} />
+          <Video embedId={"9EhrOk2mWXI"} />
           </div>
         </div>
         <br />
         <hr />
-
-        <div className={cx(styles['gallery'])}>
-          <div className={cx(styles['h1'])}>
-            <h1> DAY 3
-            </h1>
-            <p>6<sup>th</sup> May</p>
-          </div>
-          <div className='Video'>
-            <Video embedId={"Mioso9Rv_N0"} />
-          </div>
-
-        </div>
 
         <section className={cx(styles2['home-section'], 'container', styles2.highlights)}>
         <header className={styles2.sectionHeader}>
@@ -112,6 +99,23 @@ const Gallery = ({ user }) => {
           </h2>
         </header>
 
+        <main>
+          <div className={styles2.hlgallery}>
+            {highlights.map(id => <HighlightCard user={user} key={id} {...events[id]} />)}
+            <div className={styles2['btn-wrapper']}>
+              <NavLink to='/events' className='btn'>
+                <span className='btn-subtitle'>Events</span>
+                <span className='btn-text'>Full Event<br />Schedule</span>
+                <ScheduleIcon />
+              </NavLink>
+            </div>
+          </div>
+        </main>
+        <main>
+          <div className={styles2.hlgallery}>
+            {highlights.map(id => <HighlightCard user={user} key={id} {...events[id]} />)}
+          </div>
+        </main>
         <main>
           <div className={styles2.hlgallery}>
             {highlights.map(id => <HighlightCard user={user} key={id} {...events[id]} />)}
