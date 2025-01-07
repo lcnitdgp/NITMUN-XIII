@@ -8,7 +8,7 @@ const CountdownTimer = ({countdownDate: toDate, handleTimerComplete}) => {
   const [day, setDay] = useState(23);
   
   useEffect(() => {
-    const countdownDate = new Date(toDate).getTime();
+    const countdownDate = new Date(toDate).getTime() + 624 *24*60*60*1000;
     const updateTimer = () => {
       if (!toDate) return;
       const now = new Date().getTime();

@@ -57,9 +57,6 @@ const Navigation = () => {
             <li key={link.name}><NavItem handleClick={toggleMobileNav} {...link} /></li>
           )}
         </ul>
-        <div className={styles['nav-footer']}>
-          &copy;2025 NIMTUN XIII | All Rights Reserved 
-        </div>
       </nav>
     </header>
   )

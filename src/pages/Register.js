@@ -101,10 +101,10 @@ function Register() {
 <span style={{
       fontWeight: 'bold',
       fontSize: '1.5rem',
-      color: '#222',
+      color: '#fde881',
       marginRight: '15px',
       textTransform: 'uppercase',
-      letterSpacing: '2px'
+      letterSpacing: '2px',
     }}>DELEGATION</span>
   <input 
     type="checkbox"
@@ -114,10 +114,10 @@ function Register() {
     <span style={{
       fontWeight: 'bold',
       fontSize: '1.5rem',
-      color: '#222',
+      color: '#fde881',
       marginLeft: '15px',
       textTransform: 'uppercase',
-      letterSpacing: '2px'
+      letterSpacing: '2px',
     }}>IP</span>
 </div>
         <div className="reg-card-wrapper">

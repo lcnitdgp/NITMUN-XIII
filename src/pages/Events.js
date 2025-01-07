@@ -63,8 +63,8 @@ const Events = ({ user }) => {
     >
       <header className={cx('page-header', styles['page-header'])}>
         <h1 className='heading'>
-          <span>Event</span>
-          <span>Schedule</span>
+          <span>About</span>
+          <span>NITMUN</span>
         </h1>
         <div className={cx(styles['header-btn-wrapper'])}>
           <NavLink to='/gallery' className={cx('btn', styles['intro-header-btn'])}>
@@ -74,17 +74,17 @@ const Events = ({ user }) => {
           </NavLink>
         </div>
         <div className={cx('subtitle', styles['header-subtitle'])}>
-          <h2>May.4-6</h2>
-          <div>2023</div>
+          <h2>Jan.17-19</h2>
+          <div>2025</div>
         </div>
       </header>
-      <Commitees comname="About NITMUN" number=" " numbertext="NITMUN" commimage="./assets/munlogo12.png" textone="NITMUN is a forum convened by the members of the Literary Circle for discussion and analysis of global issues. It seeks to bring out motivated delegates from all over the country for brainstorming and discussing over significant international issues.
+      <Commitees comname="About" number=" " numbertext="" commimage="./assets/munlogo12.png" textone="NITMUN is a forum convened by the members of the Literary Circle for discussion and analysis of global issues. It seeks to bring out motivated delegates from all over the country for brainstorming and discussing over significant international issues.
 NITMUN promises a challenging yet a very entertaining time to all delegates."  texttwo=" Our greatest goal is to make sure that each delegate learns how to tackle world issues better at the end of the conference as the world is in dire need of young leaders now.
 Currently in its 12th edition, NITMUN has been extremely successful in providing the perfect experience to each delegate. Over the years, we have entertained more than 1000 delegates in total. Delegates arrive from all corners of India for an experience they will never forget."/>
       <main className={cx(styles['main-content'])}>
       <nav className={styles['schedule-nav']}>
         <ul className={styles.tabs}>
-          {['UNSC', 'UNODR', 'AIPPM', 'IP'].map((day, i) => (
+          {['UNSC', 'UNODC', 'AIPPM', 'IP'].map((day, i) => (
             <ScheduleNavBtn key={day}
               currentDay={currentDay} day={i}
               label={day} handleDayChange={setCurrentDay} />
@@ -99,9 +99,9 @@ Currently in its 12th edition, NITMUN has been extremely successful in providing
           studyguide="./assets/Unga_specpol_sg.pdf"
           portfolio="./assets/UNGA_PM.pdf"
           comnumber="01"
-          comshorttext="UNGA"
-          comparatext="Deliberation upon the violation of Taiwan's territorial rights by China by emphasising upon social tensions over identity, democracy and humanitarian worries stemming from potential instability."
-          comfulltext="United Nations General Assembly"
+          comshorttext="UNSC"
+          comparatext="Deliberation on the Yemen Crisis with Special Emphasis on Proxy Warfare, Radicalization, Humanitarian Blockades, and the Escalation of Regional Instability in the Arabian Peninsula."
+          comfulltext="United Nations Security Council"
         />
       )}
       {currentDay === 1 && (
@@ -112,9 +112,9 @@ Currently in its 12th edition, NITMUN has been extremely successful in providing
           studyguide="./assets/UNSC_study_guide.pdf"
           portfolio="./assets/UNSC_PORTFOLIO.pdf"
           comnumber="02"
-          comshorttext="UNSC"
-          comparatext="Deliberation on the military crisis in Sudan with emphasis on the human rights violations and the use of weapons of mass destruction."
-          comfulltext="United Nations Security Council"
+          comshorttext="UNODC"
+          comparatext="Taking measures to counter the rising influence of cartels and narcoparamilitary groups in Columbia to curb international drug trafficking."
+          comfulltext="United Nations Office on Drugs and Crime"
         />
       )}
       {currentDay === 2 && (
@@ -126,7 +126,7 @@ Currently in its 12th edition, NITMUN has been extremely successful in providing
           portfolio="./assets/AIPPM_PORTFOLIO_MATRIX.pdf"
           comnumber="03"
           comshorttext="AIPPM"
-          comparatext="Discussing the crisis in Manipur with emphasis on communal violence and violation of Suspension of Operations Agreement and legislating ways to restore peace."
+          comparatext=" Deliberation on the decline in foreign investments, rising fiscal trade deficits with neighbouring countries, currency depreciation due to border tensions, and addressing regional disparities in FDI to ensure balanced economic development."
           comfulltext="All India Political Parties Meet"
         />
       )}

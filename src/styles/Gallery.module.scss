@@ -6,7 +6,8 @@
 
     .page-header {
         @media screen and (max-width: 699px) {
-            height: 100vh;
+            height: 30vh;
+
         }
     }
 
@@ -39,7 +40,6 @@
     }
 
     .main-content {
-        padding-top: 4rem;
         padding-bottom: 6rem;
 
         .gallery {
@@ -85,7 +85,7 @@
             position: absolute;
         }
 
-        @media screen and (max-width: 700px) {
+        @media screen and (max-width: 650px) {
 
             .responsive-iframe {
                 height: 60%;

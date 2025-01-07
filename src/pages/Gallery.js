@@ -6,6 +6,7 @@ import HighlightCard from '../components/HighlightCard';
 import { ReactComponent as ScheduleIcon } from '../media/icons/schedule.svg';
 import { NavLink } from 'react-router-dom';
 import styles2 from '../styles/Home.module.scss';
+import { ReactComponent as LinkIcon } from '../media/icons/link.svg';
 
 import { events, highlights } from '../data/data';
 
@@ -54,21 +55,51 @@ const Gallery = ({ user }) => {
     >
       <header className={cx('page-header', styles['page-header'])}>
         <h1 className='heading'>
-          <span>Gallery</span>
+          <span>Highlights</span>
         </h1>
-        <div className={cx('subtitle', styles['header-subtitle'])}>
-          <h2>May.4-6</h2>
-          <div>NITMUN' XIII in reels</div>
-        </div>
       </header>
+      <div className={cx(styles['header-btn-wrapper'])} style={{ marginTop: '2rem', height: '20vh', width: '80vw' }}>
+          <NavLink to='/events' className={cx('btn', styles['intro-header-btn'])}>
+            <span className={cx('btn-subtitle', styles['intro-btn-subtitle'])}>NITMUN' XIII in reels</span>
+            <span className={cx('btn-text', styles['intro-btn-text'])}>About</span>
+            <LinkIcon />
+          </NavLink>
+        </div>
       <main className={cx(styles['main-content'])}>
 
+        <section className={cx(styles2['home-section'], 'container', styles2.highlights)}>
+        <header className={styles2.sectionHeader}>
+          <h2 className={styles2.heading}>
+            <span>Gallery</span>
+          </h2>
+          
+        </header>
 
-        <div className={cx(styles['gallery'])}>
+        <main>
+          <div className={styles2.hlgallery}>
+            {highlights.map(id => <HighlightCard user={user} key={id} {...events[id]} />)}
+            <div className={styles2['btn-wrapper']}>
+              <NavLink to='/events' className='btn'>
+                <span className='btn-subtitle'>ABOUT</span>
+                <span className='btn-text'>Know more about the hype behind NITMUN</span>
+                <ScheduleIcon />
+              </NavLink>
+            </div>
+          </div>
+        </main>
+        <main>
+          <div className={styles2.hlgallery}>
+            {highlights.map(id => <HighlightCard user={user} key={id} {...events[id]} />)}
+          </div>
+        </main>
+      
+      </section>
+
+      <div className={cx(styles['gallery'])}>
           <div className={cx(styles['h1'])}>
-            <h1> DAY 1
+            <h1> <u>Rules & Procedure</u>
             </h1>
-            <p>4<sup>th</sup> May</p>
+            
           </div>
           <div className='Video'>
             <Video embedId={"9EhrOk2mWXI"} />
@@ -77,59 +108,19 @@ const Gallery = ({ user }) => {
 
         </div>
         <br />
-        <hr />
         <div className={cx(styles['gallery'])}>
           <div className={cx(styles['h1'])}>
-            <h1> DAY 2
+            <h1> <u>THE CIRCLE.</u>
             </h1>
-            <p>5<sup>th</sup> May</p>
+            
           </div>
           <div className='Video'>
 
-          <Video embedId={"9EhrOk2mWXI"} />
+          <Video embedId={"W-M4om2WfQA?si=tmixPr-RPWjR5_7q"} />
           </div>
         </div>
         <br />
-        <hr />
-
-        <section className={cx(styles2['home-section'], 'container', styles2.highlights)}>
-        <header className={styles2.sectionHeader}>
-          <h2 className={styles2.heading}>
-            <span>Highlights</span>
-          </h2>
-        </header>
-
-        <main>
-          <div className={styles2.hlgallery}>
-            {highlights.map(id => <HighlightCard user={user} key={id} {...events[id]} />)}
-            <div className={styles2['btn-wrapper']}>
-              <NavLink to='/events' className='btn'>
-                <span className='btn-subtitle'>Events</span>
-                <span className='btn-text'>Full Event<br />Schedule</span>
-                <ScheduleIcon />
-              </NavLink>
-            </div>
-          </div>
-        </main>
-        <main>
-          <div className={styles2.hlgallery}>
-            {highlights.map(id => <HighlightCard user={user} key={id} {...events[id]} />)}
-          </div>
-        </main>
-        <main>
-          <div className={styles2.hlgallery}>
-            {highlights.map(id => <HighlightCard user={user} key={id} {...events[id]} />)}
-            <div className={styles2['btn-wrapper']}>
-              <NavLink to='/events' className='btn'>
-                <span className='btn-subtitle'>Events</span>
-                <span className='btn-text'>Full Event<br />Schedule</span>
-                <ScheduleIcon />
-              </NavLink>
-            </div>
-          </div>
-        </main>
-      </section>
-
+  
 
 
       </main>
@@ -138,3 +129,4 @@ const Gallery = ({ user }) => {
 }
 
 export default Gallery;
+

@@ -26,9 +26,7 @@ const Hero = () => {
         el.style.transform = 'translate3d(0, ' + shift.toFixed(3) + 'px, 0)';
       }
 
-      // parallax animate coordinators
-      let coordNamesTopOffset = coordinatorNames.getBoundingClientRect().top;
-      coordinatorNames.style.transform = 'translate3d(0, ' + speed * coordNamesTopOffset.toFixed(3) + 'px, 0)';
+      
     }
 
     const observer = new IntersectionObserver(entries => {

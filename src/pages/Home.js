@@ -6,13 +6,15 @@ import styles from '../styles/Home.module.scss';
 import { ReactComponent as LinkIcon } from '../media/icons/link.svg';
 import Carousel from '../components/Carousel';
 
-import { mainCoordinators, coordinators } from '../data/data'
+
+import {coordinators } from '../data/data'
 import Hero from '../components/Hero';
 import { motion } from 'framer-motion'
+import TeamCards from './TeamMembers';
 
 const tags = [
-  'delegate', 'resolution','diplomacy','caucus', 'committee',
-  'assembly', 'security council','foreign policy', 
+  'delegate ', 'resolution ','diplomacy ','caucus ', 'committee ',
+  'assembly ', 'security council ','foreign policy ', 
 ];
 
 const Home = ({ user }) => {
@@ -56,22 +58,8 @@ const Home = ({ user }) => {
 
 
       <section className={cx(styles['home-section'], styles.coordinators)}>
-        <header className={cx(styles.sectionHeader, 'container')}>
-          <h2 className={styles.heading}>
-            <span style={{ marginRight: '3ch' }}>Our</span>
-            <span className={styles._ar}>Team</span>
-          </h2>
-          <div className={cx(styles.subtitle, 'container')} id='coordinatorsList'>
-            <ul>
-              {coordinators.filter((val, i) => i <= 22).map(val => <li key={val.name}> {val.name}</li>)}
-            </ul>
-            <ul>
-              {coordinators.filter((val, i) => i > 22).map(val => <li key={val.name}> {val.name}</li>)}
-            </ul>
-          </div>
-        </header>
         <main>
-          <Carousel cardsList={mainCoordinators} />
+          <TeamCards/>
         </main>
       </section>
     </motion.div>
