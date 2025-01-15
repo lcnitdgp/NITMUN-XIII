@@ -16,7 +16,7 @@ export const coordinators = [
 ];
 
 
-export const mainCoordinators = [
+/*export const mainCoordinators = [
   {
     name: 'Daknya Bam',
     imgSrc: '/media/coordinators/daknya.jpg',
@@ -78,79 +78,80 @@ export const mainCoordinators = [
     imgSrc: '/media/coordinators/chandrashekhar.jpg',
     roles: ['Developer', 'UI/UX', 'Full stack']
   },
-]
+]*/
 
-export const highlights = ['1', '2', '8', '11', '14', '16'];
+export const highlights = ['1', '2', '3', '4', '5', '6','7', '8', '9', '10', '11', '12', '13', '14', '15', '16','17'];
 
 export const events = {
-  '17': {
-    id: '17',
-    figureSrc: 'https://i.imgur.com/JeVz4X3.jpg', // Replaced with imgur link
+  '1': {
+    id: '1',
+    figureSrc: '/assets/DSC_0054.JPG', // Replaced these with local images
   },
   '2': {
     id: '2',
-    figureSrc: 'https://i.imgur.com/mU095MD.jpg',
+    figureSrc: '/assets/DSC_0344.JPG',
   },
   '3': {
     id: '3',
-    figureSrc: 'https://i.imgur.com/QCNHvqE.jpg',
+    figureSrc: '/assets/NITMUN10.JPG',
   },
   '4': {
     id: '4',
-    figureSrc: 'https://i.imgur.com/ChInR0a.jpg',
+    figureSrc: '/assets/NITMUN5.JPG',
   },
   '5': {
     id: '5',
-    figureSrc: 'https://i.imgur.com/vadHCZq.jpg',
+    figureSrc: '/assets/IMG_9890.JPG',
   },
   '6': {
     id: '6',
-    figureSrc: 'https://i.imgur.com/VIGrCAc.jpg',
+    figureSrc: '/assets/DSC_1044.JPG',
   },
   '7': {
     id: '7',
-    figureSrc: 'https://i.imgur.com/8pJzk19.jpg',
-  },
-  '1': {
-    id: '1',
-    figureSrc: 'https://i.imgur.com/Mvf5eD3.jpg',
-  },
-  '9': {
-    id: '9',
-    figureSrc: 'https://i.imgur.com/Mkg87lS.jpg',
-  },
-  '10': {
-    id: '10',
-    figureSrc: 'https://i.imgur.com/zVO59RV.jpg',
-  },
-  '11': {
-    id: '11',
-    figureSrc: 'https://i.imgur.com/jKuIjh4.jpg',
-  },
-  '12': {
-    id: '12',
-    figureSrc: 'https://i.imgur.com/g4cWmgg.jpg',
-  },
-  '13': {
-    id: '13',
-    figureSrc: 'https://i.imgur.com/QX7v5Bi.jpg',
+    figureSrc: '/assets/NITMUN2.JPG',
   },
   '8': {
     id: '8',
-    figureSrc: 'https://i.imgur.com/JeVz4X3.jpg',
+    figureSrc: '/assets/NITMUN12.JPG',
+  },
+  '9': {
+    id: '9',
+    figureSrc: '/assets/NITMUN12.JPG',    
+  },
+  '10': {
+    id: '10',
+    figureSrc: '/assets/upload4.JPG',
+  },
+  '11': {
+    id: '11',
+    figureSrc: '/assets/upload5.jpg',
+  },
+  '12': {
+    id: '12',
+    figureSrc: '/assets/upload1.jpg',
+  },
+  '13': {
+    id: '13',
+    figureSrc: '/assets/upload2.jpg',
   },
   '14': {
     id: '14',
-    figureSrc: 'https://i.imgur.com/mU095MD.jpg',
+    figureSrc: '/assets/upload6.jpg',
   },
   '15': {
     id: '15',
-    figureSrc: 'https://i.imgur.com/QCNHvqE.jpg',
+    figureSrc: '/assets/upload7.jpg',
   },
   '16': {
     id: '16',
-    figureSrc: 'https://i.imgur.com/ChInR0a.jpg',
+    figureSrc: '/assets/upload8.jpg',
   },
+  '17': {
+    id: '17',
+    figureSrc: '/assets/upload9.jpg',
+  },
+  
 }
 
 

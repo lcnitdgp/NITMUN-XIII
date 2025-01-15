@@ -15,7 +15,7 @@ function Footer() {
                                 <div className="hr"></div>
                                 <h6> NATIONAL INSTITUTE OF TECHNOLOGY, DURGAPUR. 713209, WEST BENGAL</h6>
                                 <h6>+91 9679574264 -Poorab Kumar <span>|</span> lc.nitdgp@gmail.com </h6>
-                                <h6>NITMUN XII &copy; 2025</h6>
+                                <h6>NITMUN XIII&copy; 2025</h6>
 
                                 <div 
                                     className="contact-social" 

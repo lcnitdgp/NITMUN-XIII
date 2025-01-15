@@ -9,33 +9,35 @@ function TeamCards() {
         <h1 className="team-title">Meet the Team</h1>
         <div className="grid-container">
             <Cards 
-    facebookLink="https://www.facebook.com/profile.php?id=100061674476821" 
-    instagramLink="https://www.instagram.com/immortalcreati0n/" 
-    name="Tushar Yadav" 
+    facebookLink="https://www.facebook.com/navneet.berwal.58?mibextid=ZbWKwL" 
+    instagramLink="https://www.instagram.com/navneet_berwal?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+    name="Navneet Berwal" 
     jobTitle="Director General" 
-    backgroundImage="./assets/tushar.jpg"
+    backgroundImage="./assets/navneetb.jpg"
 />
             <Cards 
       
-    instagramLink="https://www.instagram.com/whyecwhy/" 
+    instagramLink="https://www.instagram.com/poorab_kr/?utm_source=ig_web_button_share_sheet" 
+    facebookLink="https://www.facebook.com/profile.php?id=100061674476821"
 
-    name="Epshita Chakravarty" 
+    name="Poorab Kumar" 
     jobTitle="Secretary General" 
-     backgroundImage="./assets/epshitha1.jpg"
+     backgroundImage="./assets/poorabk.jpg"
 />
 <Cards 
-    facebookLink="https://www.facebook.com/diya.sutar.56" 
-    name="Diya Sutar" 
+     instagramLink="https://www.instagram.com/kash_2408?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+    facebookLink="https://www.facebook.com/kashishagrawal2003?mibextid=ZbWKwL" 
+    name="Kashish Agarwal" 
     jobTitle="International Press Head" 
-     backgroundImage="./assets/diya.jpg"
+     backgroundImage="./assets/kashisha.jpg"
 />
             <Cards 
-    facebookLink="https://www.facebook.com/pushpal.ghodaskar" 
-    instagramLink="https://www.instagram.com/pushpal__g/" 
+    facebookLink="https://www.facebook.com/sou.bis.9?mibextid=ZbWKwL" 
+    instagramLink="https://www.instagram.com/_soumiik_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
 
-    name="Pushpal Ghodaskar" 
+    name="Soumik Biswas" 
     jobTitle="Head of the Organizing Committee" 
-     backgroundImage="./assets/pushpal1.jpg"
+     backgroundImage="./assets/soumikb.jpg"
 />
            
             
@@ -60,53 +62,55 @@ function TeamCards() {
 
            
             <Cards 
-    facebookLink="https://www.facebook.com/sou.bis.9" 
-    instagramLink="https://www.instagram.com/_soumiik_" 
+    facebookLink="https://www.facebook.com/ankitpratap04?mibextid=ZbWKwL" 
+    instagramLink="https://www.instagram.com/ankitxpratap?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
 
-    name="Soumik Biswas" 
+    name="Ankit Pratap" 
     jobTitle="Deputy Director General" 
-     backgroundImage="./assets/soumik.jpeg"
+     backgroundImage="./assets/Ankit.jpg"
 />
             <Cards 
-    facebookLink="https://www.facebook.com/navneet.berwal.58" 
-    instagramLink="https://www.instagram.com/navneet_berwal/?utm_source=qr" 
+    facebookLink="https://www.facebook.com/profile.php?id=100090790414874" 
+    instagramLink="https://www.instagram.com/manoj_9517_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
 
-    name="Navneet Berwal" 
+    name="Manoj Sai Vardhan" 
     jobTitle="Under Secretary General" 
-     backgroundImage="./assets/navneet.jpg"
+     backgroundImage="./assets/Manoj.jpg"
 />
             <Cards 
-    facebookLink="https://facebook.com/100015495341184" 
-    instagramLink="https://www.instagram.com/ab._.hi._.sh._.ek" 
+    facebookLink="https://www.facebook.com/srijanchowdhury.srijan.3?mibextid=ZbWKwL" 
+    instagramLink="https://www.instagram.com/cheeztacos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
 
-    name="Abhishek Prusty" 
+    name="Srijan Chowdhury" 
     jobTitle="Under Secretary General" 
-     backgroundImage="./assets/abhishek1.jpg"
+     backgroundImage="./assets/Srijan.jpg"
 />
             <Cards 
-    facebookLink="https://facebook.com/100078722296049" 
-    instagramLink="https://www.instagram.com/iam.kshitiz._" 
+    facebookLink="https://www.facebook.com/profile.php?id=100089247920826&mibextid=ZbWKwL" 
+    instagramLink="https://www.instagram.com/melitasaha?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
 
-    name="Kshitiz Chadha" 
+    name="Melita Saha" 
     jobTitle="Under Secretary General" 
-     backgroundImage="./assets/kshitiz.jpg"
+     backgroundImage="./assets/Melita.jpg"
 />
 
 <Cards 
-     
-    instagramLink="https://www.instagram.com/_7ayush_7" 
+     facebookLink="https://www.facebook.com/profile.php?id=100089247920826&mibextid=ZbWKwL"
+    instagramLink="https://www.instagram.com/m_varun_25?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
 
-    name="Ayush Raj" 
+    name="Varun Reddy" 
     jobTitle="Editor-in-Chief" 
-     backgroundImage="./assets/ayush.jpg"
+     backgroundImage="./assets/varun.jpg"
 />
             <Cards 
-    facebookLink="https://facebook.com/100024698449929" 
+    facebookLink="https://www.facebook.com/sumitkumar.yadav.96742?mibextid=ZbWKwL"
+    instagramLink="https://www.instagram.com/sumitrex_124421/?utm_source=ig_web_button_share_sheet"
+
     
 
-    name="Rishav Mishra" 
+    name="Sumit Kumar Yadav" 
     jobTitle="Editor-in-Chief" 
-     backgroundImage="./assets/rishav.jpg"
+     backgroundImage="./assets/sumit.jpg"
 />
             
              

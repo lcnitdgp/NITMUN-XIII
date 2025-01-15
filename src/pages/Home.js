@@ -57,11 +57,6 @@ const Home = ({ user }) => {
 
 
 
-      <section className={cx(styles['home-section'], styles.coordinators)}>
-        <main>
-          <TeamCards/>
-        </main>
-      </section>
     </motion.div>
   )
 }
