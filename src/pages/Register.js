@@ -762,7 +762,7 @@ function Register() {
 
     switch (selectedCommittee) {
       case "UNSC":
-        setPreferenceOptions(["IND", "CHN", "US"]);
+        setPreferenceOptions(["United Staes Of America", "The Russian Federation", "Iran","Kingdom of Saudia Arabia","Oman","Yemen","Qatar","Kuwait","Jordan","The United Kingdom","China","United Arab Emirates(UAE)","France","Egypt","Turkiye","Germany","Canada","Sweden","Norway","Japan","South Korea","Australia","Eritrea","Djibouti","Ethiopia","Somalia","Republic Of South Africa","Bahrain","Sudan","South Sudan","Israel","Switzerland","Netherlands","Italy","India","Pakistan","Spain","Malaysia","Indonesia","Brazil","New Zealand","Belgium","Austria","Lebanon","Syria","Libya"]);
         break;
       case "UNODC":
         setPreferenceOptions(["UK", "FRA", "GER"]);

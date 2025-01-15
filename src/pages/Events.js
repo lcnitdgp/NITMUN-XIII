@@ -111,7 +111,7 @@ Currently in its 13th edition, NITMUN has been extremely successful in providing
         <Artist
           orderContent={1}
           orderImage={2}
-          imagesrc="./assets/about_images/unsc_poster.png"
+          imagesrc="./assets/about_images/UNODC.jpg"
           studyguide="./assets/UNSC_study_guide.pdf"
           portfolio="./assets/UNSC_PORTFOLIO.pdf"
           comnumber="02"
@@ -124,7 +124,7 @@ Currently in its 13th edition, NITMUN has been extremely successful in providing
         <Artist
           orderContent={2}
           orderImage={1}
-          imagesrc="./assets/about_images/aippm_poster.jpg"
+          imagesrc="./assets/about_images/AIPPM.jpg"
           studyguide="./assets/AIPPM_STUDY_GUIDE.pdf"
           portfolio="./assets/AIPPM_PORTFOLIO_MATRIX.pdf"
           comnumber="03"
