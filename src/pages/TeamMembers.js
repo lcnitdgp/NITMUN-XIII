@@ -41,23 +41,23 @@ function TeamCards() {
 />
            
             
-<Cards 
+{/* <Cards 
     facebookLink="https://www.facebook.com/profile.php?id=100012941355984" 
     instagramLink="https://www.instagram.com/sakshimishra_sm/" 
 
     name="Sakshi" 
     jobTitle="Director of Commitee Affairs" 
      backgroundImage="./assets/sakshi2.jpg"
-/>
+/> */}
 
-<Cards 
+{/* <Cards 
     facebookLink="https://www.facebook.com/archit.lall" 
     instagramLink="https://www.instagram.com/archit_lall/" 
 
     name="Archit Lall" 
     jobTitle="Director of Commitee Affairs" 
      backgroundImage="./assets/archit.jpg"
-/>
+/> */}
 
 
            

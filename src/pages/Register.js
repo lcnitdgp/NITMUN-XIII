@@ -762,7 +762,7 @@ function Register() {
 
     switch (selectedCommittee) {
       case "UNSC":
-        setPreferenceOptions(["United Staes Of America", "The Russian Federation", "Iran","Kingdom of Saudia Arabia","Oman","Yemen","Qatar","Kuwait","Jordan","The United Kingdom","China","United Arab Emirates(UAE)","France","Egypt","Turkiye","Germany","Canada","Sweden","Norway","Japan","South Korea","Australia","Eritrea","Djibouti","Ethiopia","Somalia","Republic Of South Africa","Bahrain","Sudan","South Sudan","Israel","Switzerland","Netherlands","Italy","India","Pakistan","Spain","Malaysia","Indonesia","Brazil","New Zealand","Belgium","Austria","Lebanon","Syria","Libya"]);
+        setPreferenceOptions(["United Staes Of America", "The Russian Federation", "Iran","Kingdom of Saudi Arabia","Oman","Yemen","Qatar","Kuwait","Jordan","The United Kingdom","China","United Arab Emirates(UAE)","France","Egypt","Turkiye","Germany","Canada","Sweden","Norway","Japan","South Korea","Australia","Eritrea","Djibouti","Ethiopia","Somalia","Republic Of South Africa","Bahrain","Sudan","South Sudan","Israel","Switzerland","Netherlands","Italy","India","Pakistan","Spain","Malaysia","Indonesia","Brazil","New Zealand","Belgium","Austria","Lebanon","Syria","Libya"]);
         break;
       case "UNODC":
         setPreferenceOptions(["UK", "FRA", "GER"]);
@@ -889,7 +889,7 @@ function Register() {
                 <div className="card">
                   <div className="banner">
                     <span className="banner-text">REGISTER</span>
-                    <span className="banner-text">JOIN US</span>
+                    <span className="banner-text">NITMUN XIII</span>  
                   </div>
                   <h4 className="card__title">DELEGATION</h4>
                   <p className="card__subtitle">
@@ -908,6 +908,7 @@ function Register() {
                         autoComplete="off"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
+                        style={{ backgroundColor: '#ccc6c6' }} // Inline style for background color
                       />
                       {formik.touched.Name && formik.errors.Name ? (
                         <div>{formik.errors.Name}</div>
@@ -925,6 +926,7 @@ function Register() {
                         autoComplete="off"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
+                        style={{ backgroundColor: '#ccc6c6' }} // Inline style for background color
                       />
                       {formik.touched.email && formik.errors.email ? (
                         <div>{formik.errors.email}</div>
@@ -942,6 +944,7 @@ function Register() {
                         autoComplete="off"
                         value={phoneNumber}
                         onChange={(e) => setPhoneNumber(e.target.value)}
+                        style={{ backgroundColor: '#ccc6c6' }} // Inline style for background color
                       />
                       {formik.touched.phone && formik.errors.phone ? (
                         <div>{formik.errors.phone}</div>
@@ -951,12 +954,14 @@ function Register() {
                     <div>
                       <div className="para-container">
                         <p className="mb-4 pb-3 reg-p">INSTITUTION</p>
+                        
                       </div>
                       <select
                         name="institute"
                         className="form-style"
                         value={institute}
                         onChange={(e) => setInstitute(e.target.value)}
+                        style={{ backgroundColor: '#ccc6c6' }} // Inline style for background color
                       >
                         <option value="Select option">Select option</option>
                         <option value="NIT Durgapur">NIT Durgapur</option>
@@ -981,6 +986,7 @@ function Register() {
                         autoComplete="off"
                         value={roll}
                         onChange={(e) => setRoll(e.target.value)}
+                        
                       />
                     </div>
 
@@ -1060,6 +1066,7 @@ function Register() {
                         autoComplete="off"
                         value={instName}
                         onChange={(e) => setInstName(e.target.value)}
+                        style={{ backgroundColor: '#ccc6c6' }} // Inline style for background color
                       />
                     </div>
 
@@ -1072,6 +1079,7 @@ function Register() {
                         className="form-style"
                         value={committee1}
                         onChange={handleCommitteeChange(setCommittee1, setPreferenceOptions1)}
+                        style={{ backgroundColor: '#ccc6c6' }} // Inline style for background color
                       >
                         <option value="Select option">Select option</option>
                         <option value="UNSC">UNSC</option>
@@ -1089,6 +1097,7 @@ function Register() {
                         className="form-style"
                         value={preference1}
                         onChange={(e) => setPreference1(e.target.value)}
+                        style={{ backgroundColor: '#ccc6c6' }} // Inline style for background color
                       >
                         <option value="Select option">Select option</option>
                         {preferenceOptions1.map((option, index) => (
@@ -1108,6 +1117,7 @@ function Register() {
                         className="form-style"
                         value={committee2}
                         onChange={handleCommitteeChange(setCommittee2, setPreferenceOptions2)}
+                        style={{ backgroundColor: '#ccc6c6' }} // Inline style for background color
                       >
                         <option value="Select option">Select option</option>
                         <option value="UNSC">UNSC</option>
@@ -1125,6 +1135,7 @@ function Register() {
                         className="form-style"
                         value={preference2}
                         onChange={(e) => setPreference2(e.target.value)}
+                        style={{ backgroundColor: '#ccc6c6' }} // Inline style for background color
                       >
                         <option value="Select option">Select option</option>
                         {preferenceOptions2.map((option, index) => (
@@ -1144,6 +1155,7 @@ function Register() {
                         className="form-style"
                         value={committee3}
                         onChange={handleCommitteeChange(setCommittee3, setPreferenceOptions3)}
+                        style={{ backgroundColor: '#ccc6c6' }} // Inline style for background color
                       >
                         <option value="Select option">Select option</option>
                         <option value="UNSC">UNSC</option>
@@ -1161,6 +1173,7 @@ function Register() {
                         className="form-style"
                         value={preference3}
                         onChange={(e) => setPreference3(e.target.value)}
+                        style={{ backgroundColor: '#ccc6c6' }} // Inline style for background color
                       >
                         <option value="Select option">Select option</option>
                         {preferenceOptions3.map((option, index) => (

@@ -85,71 +85,71 @@ export const highlights = ['1', '2', '3', '4', '5', '6','7', '8', '9', '10', '11
 export const events = {
   '1': {
     id: '1',
-    figureSrc: '/assets/DSC_0054.JPG', // Replaced these with local images
+    figureSrc:"https://imgur.com/spyBHL8.jpg", // Replaced these with local images
   },
   '2': {
     id: '2',
-    figureSrc: '/assets/DSC_0344.JPG',
+    figureSrc: 'https://imgur.com/vwIZ4pM.jpg',
   },
   '3': {
     id: '3',
-    figureSrc: '/assets/NITMUN10.JPG',
+    figureSrc: 'https://imgur.com/7RlvYGh.jpg',
   },
   '4': {
     id: '4',
-    figureSrc: '/assets/NITMUN5.JPG',
+    figureSrc: 'https://imgur.com/pIz3g7M.jpg',
   },
   '5': {
     id: '5',
-    figureSrc: '/assets/IMG_9890.JPG',
+    figureSrc: 'https://imgur.com/zA6vkot.jpg',
   },
   '6': {
     id: '6',
-    figureSrc: '/assets/DSC_1044.JPG',
+    figureSrc: 'https://imgur.com/e1QBmHQ.jpg',
   },
   '7': {
     id: '7',
-    figureSrc: '/assets/NITMUN2.JPG',
+    figureSrc: 'https://imgur.com/yvt6Be9.jpg',
   },
   '8': {
     id: '8',
-    figureSrc: '/assets/NITMUN12.JPG',
+    figureSrc: 'https://imgur.com/SSQFm1K.jpg',
   },
   '9': {
     id: '9',
-    figureSrc: '/assets/NITMUN12.JPG',    
+    figureSrc: 'https://imgur.com/kPHUzNr.jpg',    
   },
   '10': {
     id: '10',
-    figureSrc: '/assets/upload4.JPG',
+    figureSrc: 'https://imgur.com/nUHNe9s.jpg',
   },
   '11': {
     id: '11',
-    figureSrc: '/assets/upload5.jpg',
+    figureSrc: 'https://imgur.com/NvGv4Sr.jpg',
   },
   '12': {
     id: '12',
-    figureSrc: '/assets/upload1.jpg',
+    figureSrc: 'https://imgur.com/zDz08NI.jpg',
   },
   '13': {
     id: '13',
-    figureSrc: '/assets/upload2.jpg',
+    figureSrc: 'https://imgur.com/FkTsRUl.jpg',
   },
   '14': {
     id: '14',
-    figureSrc: '/assets/upload6.jpg',
+    figureSrc: 'https://imgur.com/NI0BFXx.jpg',
   },
   '15': {
     id: '15',
-    figureSrc: '/assets/upload7.jpg',
+    figureSrc: 'https://imgur.com/jyZOZdz.jpg',
   },
   '16': {
     id: '16',
-    figureSrc: '/assets/upload8.jpg',
+    figureSrc: 'https://imgur.com/4wwinXs.jpg',
   },
   '17': {
     id: '17',
-    figureSrc: '/assets/upload9.jpg',
+    figureSrc: 'https://imgur.com/L0uSUph.jpg',
   },
   
 }

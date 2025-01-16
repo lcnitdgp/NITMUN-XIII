@@ -80,7 +80,7 @@ const Events = ({ user }) => {
           <div>2025</div>
         </div>
       </header>
-        /*logo has been updated to latest*/
+        
       <Commitees comname="About" number=" " numbertext="" commimage="./assets/nitmun13logo.png" textone="NITMUN is a forum convened by the members of the Literary Circle for discussion and analysis of global issues. It seeks to bring out motivated delegates from all over the country for brainstorming and discussing over significant international issues.
 NITMUN promises a challenging yet a very entertaining time to all delegates."  texttwo=" Our greatest goal is to make sure that each delegate learns how to tackle world issues better at the end of the conference as the world is in dire need of young leaders now.
 Currently in its 13th edition, NITMUN has been extremely successful in providing the perfect experience to each delegate. Over the years, we have entertained more than 1000 delegates in total. Delegates arrive from all corners of India for an experience they will never forget."/>
@@ -98,7 +98,7 @@ Currently in its 13th edition, NITMUN has been extremely successful in providing
         <Artist
           orderContent={2}
           orderImage={1}
-          imagesrc="./assets/about_images/unga_poster.png"
+          imagesrc="./assets/about_images/UNSC.jpg"
           studyguide="./assets/Unga_specpol_sg.pdf"
           portfolio="./assets/UNGA_PM.pdf"
           comnumber="01"
