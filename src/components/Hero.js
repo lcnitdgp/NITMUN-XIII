@@ -3,7 +3,7 @@ import CountdownTimer from "./CountdownTimer";
 import { eventStartDate } from "../data/data";
 import { ReactComponent as ScrollDownIcon } from '../media/icons/down.svg';
 import HeroVideo from '../media/logoreveal.mp4';
-import HeroImage from '../media/hero-image.png';
+import HeroImage from '../media/balck.png';
 import styles from './Hero.module.scss';
 
 const Hero = () => {
@@ -63,12 +63,7 @@ const Hero = () => {
       </video>
       <div className={styles.content}>
         <h1 className={styles.logo}>
-          <span className='shouldAnimate'>N</span>
-          <span className='shouldAnimate'>I</span>
-          <span className='shouldAnimate'>T</span>
-          <span className='shouldAnimate'>M</span>
-          <span className='shouldAnimate'>U</span>
-          <span className='shouldAnimate'>N</span>
+          {/* <span className='shouldAnimate'>NITMUN</span> */}
           {/* <span className='shouldAnimate'>m</span> */}
         </h1>
         
