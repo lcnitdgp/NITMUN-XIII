@@ -49,9 +49,9 @@
     }
 }
 
-.home-section:last-child {
-    padding-top: 1rem;
-}
+// .home-section:last-child {
+//     padding-top: 1rem;
+// }
 
 // ----- First section
 .intro-section {
@@ -142,7 +142,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        font-size: calc(1.4 * var(--heading-font-size));
+        font-size: calc(1.9 * var(--heading-font-size));
         white-space: nowrap;
         font-family: "Staatliches", sans-serif;
         letter-spacing: -0.10ch;
@@ -246,7 +246,7 @@
         }
 
         > :nth-child(3) {
-            grid-area: e;
+            grid-area: a;
         }
 
         > :nth-child(4) {

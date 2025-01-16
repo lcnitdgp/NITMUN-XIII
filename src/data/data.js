@@ -1,158 +1,64 @@
-export const eventStartDate = 'May 4, 2023 10:00:00';
+export const eventStartDate = 'January 24, 2025 09:00:00';
 
-export const coordinators = [
-  { name: 'Tushar Yadav', roll: '', phone: '', email: '' },
-  { name: 'Epshita Chakravarty', roll: '', phone: '', email: '' },
-  { name: 'Diya Sutar', roll: '', phone: '', email: '' },
-  { name: 'Pushpal Ghodaskar', roll: '', phone: '', email: '' },
-  { name: 'Sakshi', roll: '', phone: '', email: '' },
-  { name: 'Archit Lall', roll: '', phone: '', email: '' },
-  { name: 'Soumik Biswas', roll: '', phone: '', email: '' },
-  { name: 'Navneet Berwal', roll: '', phone: '', email: '' },
-  { name: 'Abhishek Prusty', roll: '', phone: '', email: '' },
-  { name: 'Kshitiz Chadha', roll: '', phone: '', email: '' },
-  { name: 'Ayush Raj', roll: '', phone: '', email: '' },
-  { name: 'Rishav Mishra', roll: '', phone: '', email: '' }
+export const highlights = [
+  '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '12', '13', '14', '15', '16', '17', '18', '19', '20', 
+  '21'
 ];
 
-
-/*export const mainCoordinators = [
-  {
-    name: 'Daknya Bam',
-    imgSrc: '/media/coordinators/daknya.jpg',
-    roles: ['Designer', 'UI/UX', 'Frontend', 'Coordinator'],
-    socials: ["https://www.facebook.com/daknya.bam.3", "https://www.instagram.com"]
-  },
-  {
-    name: 'Pursottam Sah',
-    imgSrc: '/media/coordinators/pursottam.jpg',
-    roles: ['Developer', 'Event Coordinator', 'Backend']
-  },
-  {
-    name: 'Mekruk Waii',
-    imgSrc: '/media/coordinators/mekruk.jpg',
-    roles: ['Designing coordinator', 'Cultural Vice-Chairman, SANIT']
-  },
-  {
-    name: 'Likha Tassam',
-    imgSrc: '/media/coordinators/tassam.jpg',
-    roles: ['Decoration Coordinator', 'Designing Team']
-  },
-  {
-    name: 'Gamjum Laye',
-    imgSrc: '/media/coordinators/gamjum.jpg',
-    roles: ['Coordinator', 'Mr. and Ms. Atulyam']
-  },
-  {
-    name: 'Joni Nomuk',
-    imgSrc: '/media/coordinators/joni.jpg',
-    roles: ['Chief coordinator Atulyam\'23', 'Cultural Secretary, SANIT']
-  },
-  {
-    name: 'Rikto Padu',
-    imgSrc: '/media/coordinators/rikto.jpg',
-    roles: ['Sponsor Head', 'IPR Chairman, SANIT']
-  },
-  {
-    name: 'Nich Talo',
-    imgSrc: '/media/coordinators/talo.jpg',
-    roles: ['Main Events Coordinator', 'Cultural Chairman, SANIT']
-  },
-  {
-    name: 'Sangklee Sidisow',
-    imgSrc: '/media/coordinators/sanklee.jpg',
-    roles: ['Advisory, Atulyam\'23', 'President, SANIT']
-  },
-  {
-    name: 'Lishi Akhil',
-    imgSrc: '/media/coordinators/akhil.jpg',
-    roles: ['Advisory, Atulyam\'23', 'General Secretary, SANIT']
-  },
-  {
-    name: 'Kamin Pajing',
-    imgSrc: '/media/coordinators/kamin1.jpg',
-    roles: ['Co-Manager', 'IPR Chairman, SANIT']
-  },
-  {
-    name: 'Chandrashekhar Tripathi',
-    imgSrc: '/media/coordinators/chandrashekhar.jpg',
-    roles: ['Developer', 'UI/UX', 'Full stack']
-  },
-]*/
-
-export const highlights = ['1', '2', '3', '4', '5', '6','7', '8', '9', '10', '11', '12', '13', '14', '15', '16','17'];
+export const highlights2 = [
+'24', '25', '26', '27', '28', '29', '30', 
+  '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', 
+  '41', '42', '43', '44', '45'
+];
 
 export const events = {
-  '1': {
-    id: '1',
-    figureSrc:"https://imgur.com/spyBHL8.jpg", // Replaced these with local images
-  },
-  '2': {
-    id: '2',
-    figureSrc: 'https://imgur.com/vwIZ4pM.jpg',
-  },
-  '3': {
-    id: '3',
-    figureSrc: 'https://imgur.com/7RlvYGh.jpg',
-  },
-  '4': {
-    id: '4',
-    figureSrc: 'https://imgur.com/pIz3g7M.jpg',
-  },
-  '5': {
-    id: '5',
-    figureSrc: 'https://imgur.com/zA6vkot.jpg',
-  },
-  '6': {
-    id: '6',
-    figureSrc: 'https://imgur.com/e1QBmHQ.jpg',
-  },
-  '7': {
-    id: '7',
-    figureSrc: 'https://imgur.com/yvt6Be9.jpg',
-  },
-  '8': {
-    id: '8',
-    figureSrc: 'https://imgur.com/SSQFm1K.jpg',
-  },
-  '9': {
-    id: '9',
-    figureSrc: 'https://imgur.com/kPHUzNr.jpg',    
-  },
-  '10': {
-    id: '10',
-    figureSrc: 'https://imgur.com/nUHNe9s.jpg',
-  },
-  '11': {
-    id: '11',
-    figureSrc: 'https://imgur.com/NvGv4Sr.jpg',
-  },
-  '12': {
-    id: '12',
-    figureSrc: 'https://imgur.com/zDz08NI.jpg',
-  },
-  '13': {
-    id: '13',
-    figureSrc: 'https://imgur.com/FkTsRUl.jpg',
-  },
-  '14': {
-    id: '14',
-    figureSrc: 'https://imgur.com/NI0BFXx.jpg',
-  },
-  '15': {
-    id: '15',
-    figureSrc: 'https://imgur.com/jyZOZdz.jpg',
-  },
-  '16': {
-    id: '16',
-    figureSrc: 'https://imgur.com/4wwinXs.jpg',
-  },
-  '17': {
-    id: '17',
-    figureSrc: 'https://imgur.com/L0uSUph.jpg',
-  },
-  
-}
+  '1': { id: '1', figureSrc: './assets/DSC_0041.JPG' },
+  '2': { id: '2', figureSrc: './assets/DSC_0054.JPG' },
+  '3': { id: '3', figureSrc: './assets/DSC_0265.JPG' },
+  '4': { id: '4', figureSrc: './assets/DSC_0281.JPG' },
+  '5': { id: '5', figureSrc: './assets/DSC_0286.JPG' },
+  '6': { id: '6', figureSrc: './assets/DSC_0344.JPG' },
+  '7': { id: '7', figureSrc: './assets/DSC_0358.JPG' },
+  '8': { id: '8', figureSrc: './assets/DSC_0631.JPG' },
+  '9': { id: '9', figureSrc: './assets/DSC_0645.JPG' },
+  '10': { id: '10', figureSrc: './assets/DSC_0675.JPG' },
+  '12': { id: '12', figureSrc: './assets/DSC_0773.JPG' },
+  '13': { id: '13', figureSrc: './assets/DSC_0791.JPG' },
+  '14': { id: '14', figureSrc: './assets/DSC_0801.JPG' },
+  '15': { id: '15', figureSrc: './assets/DSC_0830.JPG' },
+  '16': { id: '16', figureSrc: './assets/DSC_0865.JPG' },
+  '17': { id: '17', figureSrc: './assets/DSC_0902.JPG' },
+  '18': { id: '18', figureSrc: './assets/DSC_0903.JPG' },
+  '19': { id: '19', figureSrc: './assets/DSC_0912.JPG' },
+  '20': { id: '20', figureSrc: './assets/DSC_0991.JPG' },
+  '21': { id: '21', figureSrc: './assets/DSC_1044.JPG' },
+  '22': { id: '22', figureSrc: './assets/DSC_1119.JPG' },
+  '23': { id: '23', figureSrc: './assets/DSC_1154.JPG' },
+  '24': { id: '24', figureSrc: './assets/IMG_9809.JPG' },
+  '25': { id: '25', figureSrc: './assets/IMG_9814.JPG' },
+  '26': { id: '26', figureSrc: './assets/IMG_9844.JPG' },
+  '27': { id: '27', figureSrc: './assets/IMG_9890.JPG' },
+  '28': { id: '28', figureSrc: './assets/NITMUN2.JPG' },
+  '29': { id: '29', figureSrc: './assets/NITMUN3.JPG' },
+  '30': { id: '30', figureSrc: './assets/NITMUN4.JPG' },
+  '31': { id: '31', figureSrc: './assets/NITMUN5.JPG' },
+  '32': { id: '32', figureSrc: './assets/NITMUN7.JPG' },
+  '33': { id: '33', figureSrc: './assets/NITMUN8.JPG' },
+  '34': { id: '34', figureSrc: './assets/NITMUN9.JPG' },
+  '35': { id: '35', figureSrc: './assets/NITMUN10.JPG' },
+  '36': { id: '36', figureSrc: './assets/NITMUN11.JPG' },
+  '37': { id: '37', figureSrc: './assets/NITMUN12.JPG' },
+  '38': { id: '38', figureSrc: './assets/upload1.JPG' },
+  '39': { id: '39', figureSrc: './assets/upload2.JPG' },
+  '40': { id: '40', figureSrc: './assets/upload3.JPG' },
+  '41': { id: '41', figureSrc: './assets/upload4.JPG' },
+  '42': { id: '42', figureSrc: './assets/upload5.JPG' },
+  '43': { id: '43', figureSrc: './assets/upload6.JPG' },
+  '44': { id: '44', figureSrc: './assets/upload7.JPG' },
+  '45': { id: '45', figureSrc: './assets/upload8.JPG' },
+  '46': { id: '46', figureSrc: './assets/upload9.JPG' },
+};
+
 
 
 export const eventSlots = {

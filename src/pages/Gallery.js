@@ -8,7 +8,7 @@ import { NavLink } from 'react-router-dom';
 import styles2 from '../styles/Home.module.scss';
 import { ReactComponent as LinkIcon } from '../media/icons/link.svg';
 
-import { events, highlights } from '../data/data';
+import { events, highlights, highlights2 } from '../data/data';
 
 const Gallery = ({ user }) => {
 
@@ -78,18 +78,11 @@ const Gallery = ({ user }) => {
         <main>
           <div className={styles2.hlgallery}>
             {highlights.map(id => <HighlightCard user={user} key={id} {...events[id]} />)}
-            <div className={styles2['btn-wrapper']}>
-              <NavLink to='/events' className='btn'>
-                <span className='btn-subtitle'>ABOUT</span>
-                <span className='btn-text'>Know more about the hype behind NITMUN</span>
-                <ScheduleIcon />
-              </NavLink>
-            </div>
           </div>
         </main>
         <main>
           <div className={styles2.hlgallery}>
-            {highlights.map(id => <HighlightCard user={user} key={id} {...events[id]} />)}
+            {highlights2.map(id => <HighlightCard user={user} key={id} {...events[id]} />)}
           </div>
         </main>
       
