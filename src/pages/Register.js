@@ -853,7 +853,7 @@ function Register() {
               marginRight: "15px",
               textTransform: "uppercase",
               letterSpacing: "2px",
-              fontFamily: 'Staatliches',
+              fontFamily: 'Helvetica',
             }}
           >
             DELEGATION
@@ -871,7 +871,7 @@ function Register() {
               marginLeft: "15px",
               textTransform: "uppercase",
               letterSpacing: "2px",
-              fontFamily: 'Staatliches',
+              fontFamily: 'Helvetica',
             }}
           >
             IP
