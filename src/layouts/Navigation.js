@@ -37,7 +37,7 @@ const Navigation = () => {
     <header>
       <nav className={styles.nav} id="nav">
         <div className={styles.logo}>
-          <NavLink to={'/'}>NIMTUN XIII</NavLink>
+          <NavLink to={'/'}>NITMUN XIII</NavLink>
         </div>
         <div className={cx(styles["router-links"], styles.desktop)}>
           {links.filter(link => !link.onlyMobile).map(link => <NavItem key={link.name} {...link} />)}
