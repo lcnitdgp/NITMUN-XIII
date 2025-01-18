@@ -27,7 +27,7 @@ function TeamCards() {
 <Cards 
      instagramLink="https://www.instagram.com/kash_2408?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
     facebookLink="https://www.facebook.com/kashishagrawal2003?mibextid=ZbWKwL" 
-    name="Kashish Agarwal" 
+    name="Kashish Agrawal" 
     jobTitle="International Press Head" 
      backgroundImage="./assets/kashisha.jpg"
 />
@@ -40,34 +40,13 @@ function TeamCards() {
      backgroundImage="./assets/soumikb.jpg"
 />
            
-            
-{/* <Cards 
-    facebookLink="https://www.facebook.com/profile.php?id=100012941355984" 
-    instagramLink="https://www.instagram.com/sakshimishra_sm/" 
-
-    name="Sakshi" 
-    jobTitle="Director of Commitee Affairs" 
-     backgroundImage="./assets/sakshi2.jpg"
-/> */}
-
-{/* <Cards 
-    facebookLink="https://www.facebook.com/archit.lall" 
-    instagramLink="https://www.instagram.com/archit_lall/" 
-
-    name="Archit Lall" 
-    jobTitle="Director of Commitee Affairs" 
-     backgroundImage="./assets/archit.jpg"
-/> */}
-
-
-           
             <Cards 
     facebookLink="https://www.facebook.com/ankitpratap04?mibextid=ZbWKwL" 
     instagramLink="https://www.instagram.com/ankitxpratap?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
 
     name="Ankit Pratap" 
     jobTitle="Deputy Director General" 
-     backgroundImage="./assets/Ankit.jpg"
+     backgroundImage="./assets/ankit.jpeg"
 />
             <Cards 
     facebookLink="https://www.facebook.com/profile.php?id=100090790414874" 

@@ -76,7 +76,7 @@ const Events = ({ user }) => {
           </NavLink>
         </div>
         <div className={cx('subtitle', styles['header-subtitle'])}>
-          <h2>Jan.24-25</h2>
+          <h2>Jan.25-26</h2>
           <div>2025</div>
         </div>
       </header>
@@ -137,7 +137,7 @@ Currently in its 13th edition, NITMUN has been extremely successful in providing
         <Artist
           orderContent={1}
           orderImage={2}
-          imagesrc="./assets/about_images/ip_poster.jpg"
+          imagesrc="./assets/about_images/ip_post.jpeg"
           studyguide="./assets/IP study guide25.pdf"
           portfolio="./assets/IP portfolio matrix25.pdf"
           comnumber="04"

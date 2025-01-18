@@ -1,4 +1,4 @@
-export const eventStartDate = 'January 24, 2025 09:00:00';
+export const eventStartDate = 'January 25, 2025 09:00:00';
 
 export const highlights = [
   '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '12'
