@@ -765,10 +765,10 @@ function Register() {
         setPreferenceOptions(["United Staes Of America", "The Russian Federation", "Iran","Kingdom of Saudi Arabia","Oman","Yemen","Qatar","Kuwait","Jordan","The United Kingdom","China","United Arab Emirates(UAE)","France","Egypt","Turkiye","Germany","Canada","Sweden","Norway","Japan","South Korea","Australia","Eritrea","Djibouti","Ethiopia","Somalia","Republic Of South Africa","Bahrain","Sudan","South Sudan","Israel","Switzerland","Netherlands","Italy","India","Pakistan","Spain","Malaysia","Indonesia","Brazil","New Zealand","Belgium","Austria","Lebanon","Syria","Libya"]);
         break;
       case "UNODC":
-        setPreferenceOptions(["UK", "FRA", "GER"]);
+        setPreferenceOptions(["Islamic Republic of Afghanistan", "People’s Democratic Republic of Algeria", "Antigua and Barbuda", "Republic of Argentina", "Commonwealth of Australia", "Republic of Austria", "Commonwealth of the Bahamas", "People’s Republic of Bangladesh", "Barbados", "Kingdom of Belgium", "Belize", "Kingdom of Bhutan", "Plurinational State of Bolivia", "Federative Republic of Brazil", "Republic of Bulgaria", "Kingdom of Cambodia", "Canada", "Central African Republic", "Republic of Chad", "Republic of Chile", "People’s Republic of China", "Republic of Colombia", "Republic of Costa Rica", "Republic of Cuba", "Czech Republic", "Democratic Republic of the Congo", "Kingdom of Denmark", "Dominican Republic", "Republic of Ecuador", "Arab Republic of Egypt", "Republic of El Salvador", "Republic of Equatorial Guinea", "Republic of Estonia", "Federal Democratic Republic of Ethiopia", "Republic of Fiji", "Republic of Finland", "Republic of France", "Gabonese Republic", "Republic of The Gambia", "Georgia", "Federal Republic of Germany", "Republic of Ghana", "Hellenic Republic (Greece)", "Grenada", "Republic of Guatemala", "Co-operative Republic of Guyana", "Republic of Haiti", "Republic of Honduras", "Hungary", "Iceland", "Republic of India", "Republic of Indonesia", "Islamic Republic of Iran", "Republic of Iraq", "State of Israel", "Republic of Italy", "Jamaica", "Japan", "Republic of Kazakhstan", "Republic of Kenya", "State of Libya", "Republic of Lithuania", "Malaysia", "United Mexican States (Mexico)", "Republic of the Union of Myanmar", "Kingdom of The Netherlands", "New Zealand", "Federal Republic of Nigeria", "Kingdom of Norway", "Islamic Republic of Pakistan", "Independent State of Papua New Guinea", "Republic of the Philippines", "Portuguese Republic (Portugal)", "Russian Federation (Russia)", "Republic of Singapore", "Republic of South Africa", "Kingdom of Spain", "Kingdom of Sweden", "Swiss Confederation (Switzerland)", "Kingdom of Thailand", "Republic of Uganda", "United Kingdom", "United Arab Emirates", "United States of America", "Socialist Republic of VietNam", "Republic of Yemen", "Republic of Zimbabwe", "Republic of Zambia"]);
         break;
       case "AIPPM":
-        setPreferenceOptions(["BRA", "ARG", "MEX"]);
+        setPreferenceOptions(["Azam Khan", "Amit Shah", "Arvind Kejriwal", "Ashok Gehlot", "Ashwini Vaishnaw", "Bhupender Yadav", "Bhupendra Patel", "Bhupesh Baghel", "Conrad Sangma", "Digvijaya Singh", "Dharmendra Pradhan", "Dr. Jitendra Singh", "Hardeep Singh Puri", "Himanta Biswa Sarma", "K. Chandrashekhar Rao", "Kalyan Banerjee", "Kiren Rijiju", "M.K. Raghavan", "M.K. Stalin", "Mallikarjun Kharge", "Mamata Banerjee", "Mansukh Mandaviya", "M. Thambidurai", "Narendra Modi", "Nirmala Sitharaman", "Nitin Gadkari", "Piyush Goyal", "Rajeev Chandrasekhar", "Rahul Gandhi", "Rameswar Teli", "Randeep Singh Surjewala", "Rajnath Singh", "Sarbananda Sonowal", "Sadhvi Niranjan Jyoti", "S. Jaishankar", "Shashi Tharoor", "Shivraj Singh Chouhan", "Siddaramaiah", "Sonia Gandhi", "Sitaram Yechury", "Sukhendu Sekhar Roy", "Sugata Ray", "Vishnu Deo Sai", "Yogi Adityanath"]);
         break;
       default:
         setPreferenceOptions([]);
@@ -797,9 +797,14 @@ function Register() {
       })
       .then((res) => {
         console.log(res);
-        toast.success("Submitted.", {
-          onClose: () => window.location.reload(),
+        toast.success("Submitted.",{
+          onClose: () =>{ 
+            window.location.href='/';
+            window.location.reload();
+          },
         });
+          
+       
       })
       .catch((err) => {
         console.log(err);
@@ -900,7 +905,7 @@ function Register() {
                       <div className="para-container">
                         <p className="mb-4 pb-3 reg-p">NAME*</p>
                       </div>
-                      <input
+                      <input 
                         type="text"
                         name="name"
                         className="form-style"
@@ -1196,7 +1201,7 @@ function Register() {
                 <div className="card">
                   <div className="banner">
                     <span className="banner-text">REGISTER</span>
-                    <span className="banner-text">JOIN US</span>
+                    <span className="banner-text">NITMUN XIII</span>
                   </div>
                   <h4 className="card__title">IP</h4>
                   <p className="card__subtitle">
@@ -1374,9 +1379,9 @@ function Register() {
                       onChange={(e) => setCommittee1(e.target.value)}
                     >
                       <option value="Select option">Select option</option>
-                      <option value="NIT Durgapur">UNSC</option>
-                      <option value="Other">UNODC</option>
-                      <option value="Other">AIPPM</option>
+                      <option value="UNSC">UNSC</option>
+                      <option value="UNODC">UNODC</option>
+                      <option value="AIPPM">AIPPM</option>
                     </select>
 
                     </div>
@@ -1392,9 +1397,30 @@ function Register() {
                       onChange={(e) => setPreference1(e.target.value)}
                     >
                       <option value="Select option">Select option</option>
-                      <option value="NIT Durgapur">Reuters</option>
+                      {/* <option value="NIT Durgapur">Reuters</option>
                       <option value="Other">WION</option>
-                      <option value="Other">Bloomberg</option>
+                      <option value="Other">Bloomberg</option> */}
+                                        {committee1 === "UNSC" && (
+                        <>
+                          <option value="BBC">BBC</option>
+                          <option value="The New York Times">The New York Times</option>
+                          <option value="The Guardian">The Guardian</option>
+                        </>
+                      )}
+                      {committee1 === "UNODC" && (
+                        <>
+                          <option value="BBC">BBC</option>
+                          <option value="The New York Times">The New York Times</option>
+                          <option value="The Guardian">The Guardian</option>
+                        </>
+                      )}
+                      {committee1 === "AIPPM" && (
+                        <>
+                          <option value="Hindustan Times">Hindustan Times</option>
+                          <option value="Times of India">Times of India</option>
+                          <option value="The Hindu">The Hindu</option>
+                        </>
+                      )}
                     </select>
 
                     </div>
@@ -1410,9 +1436,10 @@ function Register() {
                       onChange={(e) => setCommittee2(e.target.value)}
                     >
                       <option value="Select option">Select option</option>
-                      <option value="NIT Durgapur">UNSC</option>
-                      <option value="Other">UNODC</option>
-                      <option value="Other">AIPPM</option>
+                      <option value="UNSC">UNSC</option>
+                      <option value="UNODC">UNODC</option>
+                      <option value="AIPPM">AIPPM</option>
+                      
                     </select>
 
                     </div>
@@ -1428,9 +1455,30 @@ function Register() {
                       onChange={(e) => setPreference2(e.target.value)}
                     >
                       <option value="Select option">Select option</option>
-                      <option value="NIT Durgapur">Reuters</option>
+                      {/* <option value="NIT Durgapur">Reuters</option>
                       <option value="Other">WION</option>
-                      <option value="Other">Bloomberg</option>
+                      <option value="Other">Bloomberg</option> */}
+                                 {committee2 === "UNSC" && (
+                        <>
+                          <option value="BBC">BBC</option>
+                          <option value="The New York Times">The New York Times</option>
+                          <option value="The Guardian">The Guardian</option>
+                        </>
+                      )}
+                      {committee2 === "UNODC" && (
+                        <>
+                          <option value="BBC">BBC</option>
+                          <option value="The New York Times">The New York Times</option>
+                          <option value="The Guardian">The Guardian</option>
+                        </>
+                      )}
+                      {committee2 === "AIPPM" && (
+                        <>
+                          <option value="Hindustan Times">Hindustan Times</option>
+                          <option value="Times of India">Times of India</option>
+                          <option value="The Hindu">The Hindu</option>
+                        </>
+                      )}
                     </select>
 
                     </div>
@@ -1446,9 +1494,10 @@ function Register() {
                       onChange={(e) => setCommittee3(e.target.value)}
                     >
                       <option value="Select option">Select option</option>
-                      <option value="NIT Durgapur">UNSC</option>
-                      <option value="Other">UNODC</option>
-                      <option value="Other">AIPPM</option>
+                      <option value="UNSC">UNSC</option>
+                      <option value="UNODC">UNODC</option>
+                      <option value="AIPPM">AIPPM</option>
+                
                     </select>
 
                     </div>
@@ -1464,9 +1513,30 @@ function Register() {
                       onChange={(e) => setPreference3(e.target.value)}
                     >
                       <option value="Select option">Select option</option>
-                      <option value="NIT Durgapur">Reuters</option>
+                      {/* <option value="NIT Durgapur">Reuters</option>
                       <option value="Other">WION</option>
-                      <option value="Other">Bloomberg</option>
+                      <option value="Other">Bloomberg</option> */}
+                             {committee3 === "UNSC" && (
+                        <>
+                          <option value="BBC">BBC</option>
+                          <option value="The New York Times">The New York Times</option>
+                          <option value="The Guardian">The Guardian</option>
+                        </>
+                      )}
+                      {committee3 === "UNODC" && (
+                        <>
+                          <option value="BBC">BBC</option>
+                          <option value="The New York Times">The New York Times</option>
+                          <option value="The Guardian">The Guardian</option>
+                        </>
+                      )}
+                      {committee3 === "AIPPM" && (
+                        <>
+                          <option value="Hindustan Times">Hindustan Times</option>
+                          <option value="Times of India">Times of India</option>
+                          <option value="The Hindu">The Hindu</option>
+                        </>
+                      )}
                     </select>
 
                     </div>

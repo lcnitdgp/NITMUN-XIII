@@ -99,8 +99,8 @@ Currently in its 13th edition, NITMUN has been extremely successful in providing
           orderContent={2}
           orderImage={1}
           imagesrc="./assets/about_images/UNSC.jpg"
-          studyguide="./assets/Unga_specpol_sg.pdf"
-          portfolio="./assets/UNGA_PM.pdf"
+          studyguide="./assets/unsc study guide25.pdf"
+          portfolio="./assets/Unsc portfolio25.pdf"
           comnumber="01"
           comshorttext="UNSC"
           comparatext="Deliberation on the Yemen Crisis with Special Emphasis on Proxy Warfare, Radicalization, Humanitarian Blockades, and the Escalation of Regional Instability in the Arabian Peninsula."
@@ -112,8 +112,8 @@ Currently in its 13th edition, NITMUN has been extremely successful in providing
           orderContent={1}
           orderImage={2}
           imagesrc="./assets/about_images/UNODC.jpg"
-          studyguide="./assets/UNSC_study_guide.pdf"
-          portfolio="./assets/UNSC_PORTFOLIO.pdf"
+          studyguide="./assets/unodc study guide25.pdf"
+          portfolio="./assets/unodc portfolio25.pdf"
           comnumber="02"
           comshorttext="UNODC"
           comparatext="Taking measures to counter the rising influence of cartels and narcoparamilitary groups in Columbia to curb international drug trafficking."
@@ -125,8 +125,8 @@ Currently in its 13th edition, NITMUN has been extremely successful in providing
           orderContent={2}
           orderImage={1}
           imagesrc="./assets/about_images/AIPPM.jpg"
-          studyguide="./assets/AIPPM_STUDY_GUIDE.pdf"
-          portfolio="./assets/AIPPM_PORTFOLIO_MATRIX.pdf"
+          studyguide="./assets/aippm study guide25.pdf"
+          portfolio="./assets/aippm portfolio matrix25.pdf"
           comnumber="03"
           comshorttext="AIPPM"
           comparatext="Deliberation on the decline in foreign investments, rising fiscal trade deficits with neighbouring countries, currency depreciation due to border tensions, and addressing regional disparities in FDI to ensure balanced economic development."
@@ -138,8 +138,8 @@ Currently in its 13th edition, NITMUN has been extremely successful in providing
           orderContent={1}
           orderImage={2}
           imagesrc="./assets/about_images/ip_poster.jpg"
-          studyguide="./assets/IP_study_guide.pdf"
-          portfolio="./assets/IP_portfolio_Matrix.pdf"
+          studyguide="./assets/IP study guide25.pdf"
+          portfolio="./assets/IP portfolio matrix25.pdf"
           comnumber="04"
           comshorttext="IP"
           comparatext="Presenting to you an independent body, comprising of fearless reporters who with their thorough research, well-placed questions and detailed reports, uncover the hidden truth."
