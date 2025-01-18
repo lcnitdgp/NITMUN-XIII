@@ -24,7 +24,20 @@ const Home = ({ user }) => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <Hero />
+           <section className={cx(styles["intro-section"], styles['home-section'])}>
+        <div className={styles['intro-bg']}>
+          <div className={styles.rail}>
+            {tags.map((tag, i) => <span key={i}>{tag} </span>)}
+          </div>
+          <div className={styles.rail}>
+            {tags.map((tag, i) => <span key={i}>{tag} </span>)}
+          </div>
+          <div className={styles.rail}>
+            {tags.map((tag, i) => <span key={i}>{tag} </span>)}
+          </div>
+        </div>
+        <Hero />
+      </section>
       <section className={cx(styles["intro-section"], styles['home-section'])}>
         <div className={styles['intro-bg']}>
           <div className={styles.rail}>
@@ -47,7 +60,7 @@ const Home = ({ user }) => {
           </p>
           <div className={styles['header-btn-wrapper']}>
             <NavLink to='/gallery' className={cx('btn', styles['intro-header-btn'])}>
-              <span className={cx('btn-subtitle', styles['intro-btn-subtitle'])}>NITMUN' XIII in reels</span>
+              <span className={cx('btn-subtitle', styles['intro-btn-subtitle'])}>NITMUN' XIII by The Literary Circle</span>
               <span className={cx('btn-text', styles['intro-btn-text'])}>Gallery</span>
               <LinkIcon />
             </NavLink>
@@ -57,6 +70,11 @@ const Home = ({ user }) => {
 
 
 
+      {/* <section className={cx(styles['home-section'], styles.coordinators)}>
+        <main>
+          <TeamCards/>
+        </main>
+      </section> */}
     </motion.div>
   )
 }
