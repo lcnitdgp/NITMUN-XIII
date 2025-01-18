@@ -7,6 +7,7 @@ import { ReactComponent as ScheduleIcon } from '../media/icons/schedule.svg';
 import { NavLink } from 'react-router-dom';
 import styles2 from '../styles/Home.module.scss';
 import { ReactComponent as LinkIcon } from '../media/icons/link.svg';
+import Commitees from './Commitee';
 
 import { events, highlights, highlights2, highlights3} from '../data/data';
 
@@ -58,13 +59,8 @@ const Gallery = ({ user }) => {
           <span>Highlights</span>
         </h1>
       </header>
-      <div className={cx(styles['header-btn-wrapper'])} style={{ marginTop: '2rem', height: '20vh', width: '80vw' }}>
-          <NavLink to='/events' className={cx('btn', styles['intro-header-btn'])}>
-            <span className={cx('btn-subtitle', styles['intro-btn-subtitle'])}>NITMUN' XIII by The Literary Circle</span>
-            <span className={cx('btn-text', styles['intro-btn-text'])}>About</span>
-            <LinkIcon />
-          </NavLink>
-        </div>
+      <Commitees comname="About Literary Circle" number=" " numbertext={"LITERARY CIRCLE"} commimage="./assets/lcgrpimg.jpeg" textone="Literary Circle is the club in NIT Durgapur, which gives the college an extra dimension of creative expression in the midst of technical unilateralism and gives the students of the college an opportunity to transcend the ordinary and mundane. The Literary Circle conducts various events throughout the year." texttwo="
+The club is known to be highly selective in its admission of new members, with only about 10-15 students inducted out of the entire batch of 900 each year. Great believers of the phrase ‘quality over quantity’, the members selected every year are the best of the best in the field of expression and creativity." />
       <main className={cx(styles['main-content'])}>
 
         <section className={cx(styles2['home-section'], 'container', styles2.highlights)}>
