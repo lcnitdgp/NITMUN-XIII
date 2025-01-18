@@ -6,18 +6,14 @@ export const highlights = [
 
 export const highlights2 = [
   '13', '14', '15', '16', '17', '18', '19', '20', 
-  '21','22', '23'
+  '21','22', '23',
 ];
 
 export const highlights3 = [
-'24', '25', '26', '27', '28', '29', '30', 
-  '31', '32', '33'
+'24', '25', '26', '27', '38', '39', '40', 
+  '41', '42', '43', '44'
 ];
 
-export const highlights4 = [
-  , '34', '35', '36', '37', '38', '39', '40', 
-  '41', '42', '43', '44'
-  ];
 
 export const events = {
   '1': { id: '1', figureSrc: './assets/DSC_0041.JPG' },
@@ -46,16 +42,16 @@ export const events = {
   '25': { id: '25', figureSrc: './assets/IMG_9814.JPG' },
   '26': { id: '26', figureSrc: './assets/IMG_9844.JPG' },
   '27': { id: '27', figureSrc: './assets/IMG_9890.JPG' },
-  '28': { id: '28', figureSrc: './assets/NITMUN2.JPG' },
-  '29': { id: '29', figureSrc: './assets/NITMUN3.JPG' },
-  '30': { id: '30', figureSrc: './assets/NITMUN4.JPG' },
-  '31': { id: '31', figureSrc: './assets/NITMUN5.JPG' },
-  '32': { id: '32', figureSrc: './assets/NITMUN7.JPG' },
-  '33': { id: '33', figureSrc: './assets/NITMUN8.JPG' },
-  '34': { id: '34', figureSrc: './assets/NITMUN9.JPG' },
-  '35': { id: '35', figureSrc: './assets/NITMUN10.JPG' },
-  '36': { id: '36', figureSrc: './assets/NITMUN11.JPG' },
-  '37': { id: '37', figureSrc: './assets/NITMUN12.JPG' },
+  // '28': { id: '28', figureSrc: './assets/NITMUN2.JPG' },
+  // '29': { id: '29', figureSrc: './assets/NITMUN3.JPG' },
+  // '30': { id: '30', figureSrc: './assets/NITMUN4.JPG' },
+  // '31': { id: '31', figureSrc: './assets/NITMUN5.JPG' },
+  // '32': { id: '32', figureSrc: './assets/NITMUN7.JPG' },
+  // '33': { id: '33', figureSrc: './assets/NITMUN8.JPG' },
+  // '34': { id: '34', figureSrc: './assets/NITMUN9.JPG' },
+  // '35': { id: '35', figureSrc: './assets/NITMUN10.JPG' },
+  // '36': { id: '36', figureSrc: './assets/NITMUN11.JPG' },
+  // '37': { id: '37', figureSrc: './assets/NITMUN12.JPG' },
   '38': { id: '38', figureSrc: './assets/upload1.JPG' },
   '39': { id: '39', figureSrc: './assets/upload2.JPG' },
   '40': { id: '40', figureSrc: './assets/upload3.JPG' },

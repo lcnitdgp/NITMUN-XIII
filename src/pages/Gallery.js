@@ -8,7 +8,7 @@ import { NavLink } from 'react-router-dom';
 import styles2 from '../styles/Home.module.scss';
 import { ReactComponent as LinkIcon } from '../media/icons/link.svg';
 
-import { events, highlights, highlights2, highlights3, highlights4 } from '../data/data';
+import { events, highlights, highlights2, highlights3} from '../data/data';
 
 const Gallery = ({ user }) => {
 
@@ -93,11 +93,11 @@ const Gallery = ({ user }) => {
           </main>
 
           
-        <main>
+        {/* <main>
           <div className={styles2.hlgallery}>
             {highlights4.map(id => <HighlightCard user={user} key={id} {...events[id]} />)}
           </div>
-          </main>
+          </main> */}
       
       </section>
 
