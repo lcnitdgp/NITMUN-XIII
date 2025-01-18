@@ -797,14 +797,9 @@ function Register() {
       })
       .then((res) => {
         console.log(res);
-        toast.success("Submitted.",{
-          onClose: () =>{ 
-            window.location.href='/';
-            window.location.reload();
-          },
+        toast.success("Submitted. Please check your email for updates.", {
+          onClose: () => window.location.href = "/",
         });
-          
-       
       })
       .catch((err) => {
         console.log(err);
@@ -858,6 +853,7 @@ function Register() {
               marginRight: "15px",
               textTransform: "uppercase",
               letterSpacing: "2px",
+              fontFamily: 'Helvetica',
             }}
           >
             DELEGATION
@@ -875,6 +871,7 @@ function Register() {
               marginLeft: "15px",
               textTransform: "uppercase",
               letterSpacing: "2px",
+              fontFamily: 'Helvetica',
             }}
           >
             IP
@@ -940,7 +937,7 @@ function Register() {
 
                     <div>
                       <div className="para-container">
-                        <p className="mb-4 pb-3 reg-p">PHONE NUMBER*</p>
+                        <p className="mb-4 pb-3 reg-p ">PHONE NUMBER*</p>
                       </div>
                       <input
                         name="phone"
@@ -1077,7 +1074,7 @@ function Register() {
 
                     <div>
                       <div className="para-container">
-                        <p className="mb-4 pb-3 reg-p">committee1</p>
+                        <p className="mb-4 pb-3 reg-p">COMMITTEE-1*</p>
                       </div>
                       <select
                         name="committee1"
@@ -1095,7 +1092,7 @@ function Register() {
 
                     <div>
                       <div className="para-container">
-                        <p className="mb-4 pb-3 reg-p">preference1</p>
+                        <p className="mb-4 pb-3 reg-p">PREFERENCE-1*</p>
                       </div>
                       <select
                         name="preference1"
@@ -1115,7 +1112,7 @@ function Register() {
 
                     <div>
                       <div className="para-container">
-                        <p className="mb-4 pb-3 reg-p">committee2</p>
+                        <p className="mb-4 pb-3 reg-p">COMMITTEE-2*</p>
                       </div>
                       <select
                         name="committee2"
@@ -1133,7 +1130,7 @@ function Register() {
 
                     <div>
                       <div className="para-container">
-                        <p className="mb-4 pb-3 reg-p">preference2</p>
+                        <p className="mb-4 pb-3 reg-p">PREFERENCE-2*</p>
                       </div>
                       <select
                         name="preference2"
@@ -1153,7 +1150,7 @@ function Register() {
 
                     <div>
                       <div className="para-container">
-                        <p className="mb-4 pb-3 reg-p">committee3</p>
+                        <p className="mb-4 pb-3 reg-p">COMMITTEE-3*</p>
                       </div>
                       <select
                         name="committee3"
@@ -1171,7 +1168,7 @@ function Register() {
 
                     <div>
                       <div className="para-container">
-                        <p className="mb-4 pb-3 reg-p">preference3</p>
+                        <p className="mb-4 pb-3 reg-p">PREFERENCE-3*</p>
                       </div>
                       <select
                         name="preference3"
@@ -1187,6 +1184,21 @@ function Register() {
                           </option>
                         ))}
                       </select>
+                    </div>
+                    <div>
+                      <div className="para-container">
+                        <p className="mb-4 pb-3 reg-p">EXPERIENCE*</p>
+                      </div>
+                      <input 
+                        type="text"
+                        name="name"
+                        className="form-style"
+                        placeholder="Your Name"
+                        autoComplete="off"
+                        value={experience}
+                        onChange={(e) => setExperience(e.target.value)}
+                        style={{ backgroundColor: '#ccc6c6' }} // Inline style for background color
+                      />
                     </div>
 
                     <button className="sign-up" type="submit">
@@ -1370,7 +1382,7 @@ function Register() {
 
                      <div>
                     <div className="para-container">
-                      <p className="mb-4 pb-3 reg-p">committee1</p>
+                      <p className="mb-4 pb-3 reg-p">COMMITTEE-1*</p>
                     </div>
                     <select
                       name="institute"
@@ -1388,7 +1400,7 @@ function Register() {
 
                     <div>
                     <div className="para-container">
-                      <p className="mb-4 pb-3 reg-p">preference1</p>
+                      <p className="mb-4 pb-3 reg-p">PREFERENCE-1*</p>
                     </div>
                     <select
                       name="institute"
@@ -1427,7 +1439,7 @@ function Register() {
 
                     <div>
                     <div className="para-container">
-                      <p className="mb-4 pb-3 reg-p">committee2</p>
+                      <p className="mb-4 pb-3 reg-p">COMMITTEE-2*</p>
                     </div>
                     <select
                       name="institute"
@@ -1446,7 +1458,7 @@ function Register() {
 
                     <div>
                     <div className="para-container">
-                      <p className="mb-4 pb-3 reg-p">preference2</p>
+                      <p className="mb-4 pb-3 reg-p">PREFERENCE-2*</p>
                     </div>
                     <select
                       name="institute"
@@ -1485,7 +1497,7 @@ function Register() {
 
                     <div>
                     <div className="para-container">
-                      <p className="mb-4 pb-3 reg-p">committee3</p>
+                      <p className="mb-4 pb-3 reg-p">COMMITTEE-3*</p>
                     </div>
                     <select
                       name="institute"
@@ -1504,7 +1516,7 @@ function Register() {
 
                     <div>
                     <div className="para-container">
-                      <p className="mb-4 pb-3 reg-p">preference3</p>
+                      <p className="mb-4 pb-3 reg-p">PREFERENCE-3*</p>
                     </div>
                     <select
                       name="institute"
@@ -1539,6 +1551,21 @@ function Register() {
                       )}
                     </select>
 
+                    </div>
+                    <div>
+                      <div className="para-container">
+                        <p className="mb-4 pb-3 reg-p">EXPERIENCE</p>
+                      </div>
+                      <input 
+                        type="text"
+                        name="name"
+                        className="form-style"
+                        placeholder="Your Name"
+                        autoComplete="off"
+                        value={experience}
+                        onChange={(e) => setExperience(e.target.value)}
+                        style={{ backgroundColor: '#ccc6c6' }} // Inline style for background color
+                      />
                     </div>
 
                     <button className="sign-up" type="submit">Submit</button>

@@ -5,6 +5,7 @@ import { ReactComponent as ScrollDownIcon } from '../media/icons/down.svg';
 import HeroVideo from '../media/logoreveal.mp4';
 import HeroImage from '../media/balck.png';
 import styles from './Hero.module.scss';
+import TimerComp from './timercomp.js';
 
 const Hero = () => {
   const [isLive, setIsLive] = useState(false);
@@ -33,7 +34,7 @@ const Hero = () => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           navEl.style.position = 'absolute';
-          navEl.style.top = '100vh';
+          // navEl.style.top = '100vh';
         } else {
           navEl.style.position = 'fixed';
           navEl.style.top = '0';
@@ -56,7 +57,7 @@ const Hero = () => {
 
   return (
     <div className={styles.hero} id="hero">
-      <img className={styles['hero-bg']} src={HeroImage} alt="" />
+      {/* <img className={styles['hero-bg']} src={HeroImage} alt="" /> */}
       <div className={styles.grain}></div>
       <video className={styles['hero-bg']}  autoPlay={true} muted={true} loop={true}>
         <source src={HeroVideo} />
@@ -69,7 +70,7 @@ const Hero = () => {
         
         <div className={styles.timeline}>
           { (<>
-            <CountdownTimer countdownDate={eventStartDate} handleTimerComplete={setIsLive} />
+            <TimerComp />
           </>)}
         </div>
       </div>

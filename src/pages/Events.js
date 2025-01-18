@@ -70,13 +70,13 @@ const Events = ({ user }) => {
         </h1>
         <div className={cx(styles['header-btn-wrapper'])}>
           <NavLink to='/gallery' className={cx('btn', styles['intro-header-btn'])}>
-            <span className={cx('btn-subtitle', styles['intro-btn-subtitle'])}>NITMUN' XIII in reels</span>
+            <span className={cx('btn-subtitle', styles['intro-btn-subtitle'])}>NITMUN' XIII by The Literary Circle</span>
             <span className={cx('btn-text', styles['intro-btn-text'])}>Gallery</span>
             <LinkIcon />
           </NavLink>
         </div>
         <div className={cx('subtitle', styles['header-subtitle'])}>
-          <h2>Jan.24-26</h2>
+          <h2>Jan.24-25</h2>
           <div>2025</div>
         </div>
       </header>
@@ -100,7 +100,7 @@ Currently in its 13th edition, NITMUN has been extremely successful in providing
           orderImage={1}
           imagesrc="./assets/about_images/UNSC.jpg"
           studyguide="./assets/unsc study guide25.pdf"
-          portfolio="./assets/Unsc portfolio25.pdf"
+          portfolio="./assets/unsc_porfolio_matrix_25.pdf"
           comnumber="01"
           comshorttext="UNSC"
           comparatext="Deliberation on the Yemen Crisis with Special Emphasis on Proxy Warfare, Radicalization, Humanitarian Blockades, and the Escalation of Regional Instability in the Arabian Peninsula."
@@ -113,7 +113,7 @@ Currently in its 13th edition, NITMUN has been extremely successful in providing
           orderImage={2}
           imagesrc="./assets/about_images/UNODC.jpg"
           studyguide="./assets/unodc study guide25.pdf"
-          portfolio="./assets/unodc portfolio25.pdf"
+          portfolio="./assets/unodc_porfolio_matrix_25.pdf"
           comnumber="02"
           comshorttext="UNODC"
           comparatext="Taking measures to counter the rising influence of cartels and narcoparamilitary groups in Columbia to curb international drug trafficking."
@@ -126,7 +126,7 @@ Currently in its 13th edition, NITMUN has been extremely successful in providing
           orderImage={1}
           imagesrc="./assets/about_images/AIPPM.jpg"
           studyguide="./assets/aippm study guide25.pdf"
-          portfolio="./assets/aippm portfolio matrix25.pdf"
+          portfolio="./assets/aippm_portfolio_matrix_25.pdf"
           comnumber="03"
           comshorttext="AIPPM"
           comparatext="Deliberation on the decline in foreign investments, rising fiscal trade deficits with neighbouring countries, currency depreciation due to border tensions, and addressing regional disparities in FDI to ensure balanced economic development."

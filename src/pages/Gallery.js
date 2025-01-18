@@ -8,7 +8,7 @@ import { NavLink } from 'react-router-dom';
 import styles2 from '../styles/Home.module.scss';
 import { ReactComponent as LinkIcon } from '../media/icons/link.svg';
 
-import { events, highlights, highlights2 } from '../data/data';
+import { events, highlights, highlights2, highlights3} from '../data/data';
 
 const Gallery = ({ user }) => {
 
@@ -60,7 +60,7 @@ const Gallery = ({ user }) => {
       </header>
       <div className={cx(styles['header-btn-wrapper'])} style={{ marginTop: '2rem', height: '20vh', width: '80vw' }}>
           <NavLink to='/events' className={cx('btn', styles['intro-header-btn'])}>
-            <span className={cx('btn-subtitle', styles['intro-btn-subtitle'])}>NITMUN' XIII in reels</span>
+            <span className={cx('btn-subtitle', styles['intro-btn-subtitle'])}>NITMUN' XIII by The Literary Circle</span>
             <span className={cx('btn-text', styles['intro-btn-text'])}>About</span>
             <LinkIcon />
           </NavLink>
@@ -85,6 +85,19 @@ const Gallery = ({ user }) => {
             {highlights2.map(id => <HighlightCard user={user} key={id} {...events[id]} />)}
           </div>
         </main>
+
+        <main>
+          <div className={styles2.hlgallery}>
+            {highlights3.map(id => <HighlightCard user={user} key={id} {...events[id]} />)}
+          </div>
+          </main>
+
+          
+        {/* <main>
+          <div className={styles2.hlgallery}>
+            {highlights4.map(id => <HighlightCard user={user} key={id} {...events[id]} />)}
+          </div>
+          </main> */}
       
       </section>
 

@@ -1,0 +1,58 @@
+.timer{
+    margin-top: 60px;
+    width: 50%;
+    font-family: 'Courier New', Courier, monospace;
+    color: #222; /* Adjust the color to match the previous color scheme */
+    text-shadow: none; /* Remove the text shadow */
+   /* box-shadow: 0px 0px 10px rgba(0,0,0,0.1);  Add a box shadow */
+    border-radius: 10px; /* Add border radius */
+    padding: 2px; 
+    /*background-color: rgb(23, 22, 22); */
+    transform: translate(50%,-50%);
+  }
+  
+  .Clock-days {
+    font-size: 1.8rem;
+    color: #BB943A;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    animation: none; /* Remove the animation */}
+  
+  .Clock-days  .spanning {
+    margin-right: 10px;
+    padding: 5px;
+  }
+  
+  .Clock-days .sec {
+   /* padding: 5px 5px; */
+    border-radius: 5px;
+    color: blanchedalmond;
+  }
+  
+  @media (max-width: 768px) { /* Adjust the styles for larger screens */
+    .timer {
+      transform: translate(50%);
+      width: 50%;
+    }
+    .Clock-days .sec{
+      margin-top: -35px;
+    }
+  }
+  @media (max-width: 1000px) { /* Adjust the styles for larger screens */
+    .timer {
+      transform: translate(50%);
+      width: 50%;
+    }
+    .Clock-days .sec{
+      margin-top: -35px;
+    }
+  } 
+  
+  @media screen and (max-width: 300px)   {
+    .Clock-days{
+      font-size: 1.4rem; /* adjust as needed */
+    }
+  }
