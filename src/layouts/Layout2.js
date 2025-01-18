@@ -9,7 +9,7 @@ const GalleryPage = () => {
       setLoading(true);
       setTimeout(() => {
         setLoading(false);
-      }, 3500);
+      }, 7500);
     }, []);
     return (
         <div className="App">
