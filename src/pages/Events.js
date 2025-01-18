@@ -137,7 +137,7 @@ Currently in its 13th edition, NITMUN has been extremely successful in providing
         <Artist
           orderContent={1}
           orderImage={2}
-          imagesrc="./assets/IP_poster.jpg"
+          imagesrc="./assets/about_images/ip_post.jpeg"
           studyguide="./assets/IP study guide25.pdf"
           portfolio="./assets/IP portfolio matrix25.pdf"
           comnumber="04"
